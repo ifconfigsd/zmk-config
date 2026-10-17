@@ -1026,7 +1026,7 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F23 &tog_of 8 &tog_on 27>,
+                <&kt_on F23 &tog_on 27>,
                 <&macro_pause_for_release>,
                 <&kt_off F23 &tog_of 27>;
         };
@@ -1038,7 +1038,7 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F23 &tog_of 2 &tog_of 7 &tog_on 27>,
+                <&kt_on F23 &tog_of 2 &tog_on 27>,
                 <&macro_pause_for_release>,
                 <&kt_off F23 &tog_on 2 &tog_of 27>;
         };
