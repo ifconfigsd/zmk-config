@@ -1381,9 +1381,5 @@
             then-layer = <21>;
         };
 
-        F1_Fx {
-            if-layers = <11 8>;
-            then-layer = <25>;
-        };
     };
 };
