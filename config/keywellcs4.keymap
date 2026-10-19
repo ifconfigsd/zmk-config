@@ -1259,10 +1259,10 @@
 
         Sys_Emoji_and_Symbols {
             bindings = <
-&kp Q      &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U   &kp Y   &kp LSHFT
-&kp LSHFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E   &kp I      &kp O
-&kp Z      &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &trans  &trans  &trans
-           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&kp Q      &kp W   &kp F                &kp P            &kp G                &kp J   &kp L   &kp U                &kp Y            &kp LSHFT
+&kp LSHFT  &kp A   &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_COMMAND T  &kp D   &kp H   &hmr LEFT_COMMAND N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O
+&kp Z      &kp X   &kp C                &kp V            &kp B                &kp K   &kp M   &trans               &trans           &trans
+           &trans  &trans               &trans           &trans               &trans  &trans  &trans               &trans           &trans               &trans  &trans
             >;
         };
 
