@@ -1071,7 +1071,7 @@
 &kp Z                          &kp I                 &Layer_Tap_Timeless_Left 29 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                            &Layer_Tap_Timeless_Right 12 K  &Layer_Tap_Timeless_Right 29 E  &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H            &hml LALT C                &hml LEFT_COMMAND N                &D_Tasks_Timeless_left 0 L       &kp X                           &hmr LEFT_COMMAND Y             &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
 &Layer_Tap_Timeless_Left 15 P  &lt 23 LEFT_BRACKET   &lt 24 W                       &lt 22 D                   &Layer_Tap_Timeless_Left 14 COMMA  &kp R                            &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
-                               &trans                &trans                         &trans                     &trans                             &Test_Dedicated_SysSym_Uk_Macro  &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 7 SPACE
+                               &trans                &trans                         &trans                     &trans                             &trans  &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 7 SPACE
             >;
         };
 
