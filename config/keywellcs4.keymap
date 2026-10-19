@@ -1025,9 +1025,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F23 &tog_on 26>,
+                <&kt_on F23 &tog_on 19>,
                 <&macro_pause_for_release>,
-                <&kt_off F23 &tog_of 26>;
+                <&kt_off F23 &tog_of 19>;
         };
 
         Emoji_Sys_Layout_macro: Emoji_macro {
@@ -1037,9 +1037,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F24 &tog_on 26>,
+                <&kt_on F24 &tog_on 19>,
                 <&macro_pause_for_release>,
-                <&kt_off F24 &tog_of 26>;
+                <&kt_off F24 &tog_of 19>;
         };
     };
 
@@ -1257,12 +1257,12 @@
             >;
         };
 
-        layer_28 {
+        Sys_Emoji_and_Symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q      &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U   &kp Y   &kp LSHFT
+&kp LSHFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E   &kp I      &kp O
+&kp Z      &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &trans  &trans  &trans
+           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans
             >;
         };
 
