@@ -17,8 +17,8 @@
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
-#define WARP  22
-#define PRESISION  23
+#define WARP  21
+#define PRESISION  22
 
 #include "includes/mouse.dtsi"
 #include <zmk-unicode/keys-extra.h> // All Unicode glyphs except CJK
