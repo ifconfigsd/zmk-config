@@ -1011,15 +1011,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_wait_time 300>,
-                <&kp RIGHT_SHIFT>,
-                <&kp RIGHT_SHIFT>,
-                <&kt_on RIGHT_SHIFT>,
+                <&kp RIGHT_SHIFT &kp RIGHT_SHIFT &kt_on RIGHT_SHIFT>,
                 <&macro_wait_time 1000>,
                 <&kt_off RIGHT_SHIFT>;
+
             label = "KEYCLUSHOWSHORTCUTSMACRO";
         };
 
-        Test_Dedicated_SysSym_EN_Macro: Test_1_Dedicated_Sys_Sym_Macro {
+        Symbol_Sys_Layout_Macro: Test_1_Dedicated_Sys_Sym_Macro {
             compatible = "zmk,behavior-macro";
             label = "TEST_1_DEDICATED_SYS_SYM_MACRO";
             tap-ms = <0>;
@@ -1031,16 +1030,16 @@
                 <&kt_off F23 &tog_of 27>;
         };
 
-        Test_Dedicated_SysSym_Uk_Macro: Test_Dedicated_SysSym_Uk_Macro {
+        Emoji_Sys_Layout_macro: Emoji_macro {
             compatible = "zmk,behavior-macro";
-            label = "TEST_DEDICATED_SYSSYM_UK_MACRO";
+            label = "EMOJI_MACRO";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F23 &tog_of 2 &tog_on 27>,
+                <&kt_on F24 &tog_of 2 &tog_on 27>,
                 <&macro_pause_for_release>,
-                <&kt_off F23 &tog_on 2 &tog_of 27>;
+                <&kt_off F24 &tog_on 2 &tog_of 27>;
         };
     };
 
@@ -1131,10 +1130,10 @@
             //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
 
             bindings = <
-&En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                         &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                        &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                           &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &trans            &trans                              &Test_Dedicated_SysSym_EN_Macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+&En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
+                                &trans     &trans         &mo 25            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
@@ -1150,7 +1149,7 @@
 &kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
 &kp LS(LEFT_BRACKET)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_PLAY_PAUSE  &kp C_MUTE  &kp KP_DOT   &kp N1        &kp N2        &kp N3  &kp NUMBER_0
-                      &tog_of 9         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &trans
+                      &tog_of 9         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &Emoji_Sys_Layout_macro
             >;
         };
 
@@ -1169,7 +1168,7 @@
 &none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 13    &kp HOME          &kp PAGE_UP    &none     &none     &none
 &trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN  &none     &none     &none
-                    &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &trans
+                    &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &Symbol_Sys_Layout_Macro
             >;
         };
 
@@ -1321,7 +1320,7 @@
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
 &none   &none              &none                &none        &none                &none   &kp F1  &kp F2  &kp F3  &kp F12
-        &trans             &trans               &trans       &trans               &trans  &trans  &trans  &trans  &trans   &trans   &trans
+        &trans             &trans               &trans       &trans               &trans  &trans  &trans  &trans  &trans   &trans   &mo 25
             >;
         };
 
@@ -1339,7 +1338,7 @@
 &kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
 &kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &mo 8
             >;
         };
 
@@ -1380,6 +1379,5 @@
             if-layers = <24>;
             then-layer = <21>;
         };
-
     };
 };
