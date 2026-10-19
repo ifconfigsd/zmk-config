@@ -1037,9 +1037,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F24 &tog_of 2 &tog_on 27>,
+                <&kt_on F24 &tog_on 27>,
                 <&macro_pause_for_release>,
-                <&kt_off F24 &tog_on 2 &tog_of 27>;
+                <&kt_off F24 &tog_of 27>;
         };
     };
 
@@ -1068,10 +1068,10 @@
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-&kp Z                          &kp I                 &Layer_Tap_Timeless_Left 29 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                            &Layer_Tap_Timeless_Right 12 K  &Layer_Tap_Timeless_Right 29 E  &kp B              &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H            &hml LALT C                &hml LEFT_COMMAND N                &D_Tasks_Timeless_left 0 L       &kp X                           &hmr LEFT_COMMAND Y             &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
-&Layer_Tap_Timeless_Left 15 P  &lt 23 LEFT_BRACKET   &lt 24 W                       &lt 22 D                   &Layer_Tap_Timeless_Left 14 COMMA  &kp R                            &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
-                               &trans                &trans                         &trans                     &trans                             &trans  &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 7 SPACE
+&kp Z                          &kp I                 &Layer_Tap_Timeless_Left 29 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 12 K  &Layer_Tap_Timeless_Right 29 E  &kp B              &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H            &hml LALT C                &hml LEFT_COMMAND N                &D_Tasks_Timeless_left 0 L  &kp X                           &hmr LEFT_COMMAND Y             &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
+&Layer_Tap_Timeless_Left 15 P  &lt 23 LEFT_BRACKET   &lt 24 W                       &lt 22 D                   &Layer_Tap_Timeless_Left 14 COMMA  &kp R                       &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
+                               &trans                &trans                         &trans                     &trans                             &trans                      &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 7 SPACE
             >;
         };
 
@@ -1338,7 +1338,7 @@
 &kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
 &kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &mo 8
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &mo 25
             >;
         };
 
