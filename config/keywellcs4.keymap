@@ -1106,10 +1106,10 @@
 
         Symbols_UK_QWERTY {
             bindings = <
-&En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)  &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)  &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LEFT_ALT LA(LC(COLON))       &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
-&kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
-                                &trans     &trans                 &trans                        &trans                              &trans      &trans                         &trans                               &trans                            &trans                        &trans                  &trans
+&En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)               &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LEFT_ALT LA(LC(COLON))       &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
+&kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)               &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
+                                &trans     &trans                 &mo 24                        &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
             >;
         };
 
