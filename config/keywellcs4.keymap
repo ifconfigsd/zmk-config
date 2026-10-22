@@ -1049,9 +1049,9 @@
         Base {
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 10 U  &Layer_Tap_Timeless_Right 28 I  &kp O        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                           &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr RIGHT_CONTROL COLON
+&kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                           &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr RIGHT_CONTROL SEMI
 &Layer_Tap_Timeless_Left 13 Z  &lt 22 X              &lt 23 C                       &lt 21 V                       &Layer_Tap_Timeless_Left 12 B  &kp N                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 8             &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      &Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 7 SPACE
+                               &tog_on 8             &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      &Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER                &Thumb_HT_VeryShort 7 SPACE
             >;
         };
 
@@ -1352,14 +1352,15 @@
         };
     };
 
-        Ubuntu {
-            bindings = <
+    Ubuntu {
+        bindings = <
 &kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 15 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &UbuntuAppSwWA_Timeless 0 Z  &lt 22 X             &lt 23 C             &lt 21 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
                              &trans               &trans               &trans                         &lt 14 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
-            >;
-        };
+        >;
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
