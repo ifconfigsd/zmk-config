@@ -1085,7 +1085,7 @@
             >;
         };
 
-        iPad {
+        iPad_Native_Globe {
             bindings = <
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
