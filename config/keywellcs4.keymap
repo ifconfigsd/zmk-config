@@ -696,30 +696,30 @@
             tap-ms = <0>;
         };
 
-        Mac_Macro: Mac {
+        Mac_BT_Macro: Mac {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 29 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
-        iPad_Macro: iPad {
+        iPad_BT_Macro: iPad {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_of 29 &tog_of 2 &tog_of 3 &tog_on 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
-        Ubuntu_Macro: UbuntuMacro {
+        Ubuntu_BT_Macro: UbuntuMacro {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
+            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 29>;
             label = "UBUNTUMACRO";
         };
 
@@ -1335,10 +1335,10 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 6        &none         &trans      &Ubuntu_Macro  &none    &tog 24
-&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans      &trans         &trans   &iPad_Macro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &Mac_Macro  &trans         &none    &none
-           &sys_reset  &none       &none       &none         &none         &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
+&tog_on 2  &none       &tog 3      &none       &tog 6        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
+&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
+&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
+           &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
             >;
         };
 
@@ -1350,17 +1350,16 @@
            &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none
             >;
         };
+
         Ubuntu {
             bindings = <
 &kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 15 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &UbuntuAppSwWA_Timeless 0 Z  &lt 22 X             &lt 23 C             &lt 21 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
                              &trans               &trans               &trans                         &lt 14 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
-        >;
+            >;
+        };
     };
-    };
-
-
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
