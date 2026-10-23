@@ -784,7 +784,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F22 &tog_on 2 &tog_on 3>;
+            bindings = <&kp F22>;
             label = "MACKARABINERUK";
         };
 
@@ -795,7 +795,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F21 &tog_of 2 &tog_of 3>;
+            bindings = <&kp F21>;
             label = "MACKARABINEREN";
         };
 
