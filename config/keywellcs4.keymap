@@ -710,7 +710,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 29 &tog_of 2 &tog_of 3 &tog_on 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_of 29 &tog_of 2 &tog_of 3 &tog_on 4 &tog_on 1 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
