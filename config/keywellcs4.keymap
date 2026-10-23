@@ -562,7 +562,7 @@
         iPad_SwitchToUK {
             // Read in Mac counterpat combo
 
-            bindings = <&iPadUK_Macro>;
+            bindings = <&iPad_UA_Macro>;
             key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <4>;
@@ -799,7 +799,7 @@
             label = "MACKARABINEREN";
         };
 
-        iPadUK_Macro: iPadUK_Macro {
+        iPad_UA_Macro: iPadUK_Macro {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
@@ -1055,7 +1055,7 @@
             >;
         };
 
-        To-Qwerty-Translator {
+        OS-in-EN-QWERTY {
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 10 L  &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
@@ -1064,7 +1064,7 @@
             >;
         };
 
-        UK_Phonetic {
+        OS-in-UA-QWERTY {
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
@@ -1075,8 +1075,8 @@
             >;
         };
 
-        UK_Phonetic_MacOS_ShortCuts_Fix {
-            display-name = "UK-ShortCutsFix";
+        Mac-in-UA-QWERTY-Shortcuts {
+            display-name = "ToDo-Mege- Differs from iPad only by Global";
             bindings = <
 &trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
 &kp LEFT_SHIFT  &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
