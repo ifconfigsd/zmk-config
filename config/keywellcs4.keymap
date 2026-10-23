@@ -525,29 +525,18 @@
 
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
-            layers = <3>;
+            layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        Mac_ENSupresLetterDrop {
-            // when En Seleced, combo to switch to EN disabled. When you blindly hit keys of this combo, to ensure you
-            // on EN, being on EN already, itnsead of combo you get letters typed. This is annoying to delete then.
-            // So suppress these combination of letters, by having them in a same combo as EN but producing nothing.
-
-            bindings = <&none>;
-            key-positions = <28 27>;
-            timeout-ms = <170>;
-            layers = <0>;
-        };
-
-        Mac_UK_Accent_DeadKey {
+        Mac_UK_Accent_DeadKey_ToDo {
             // Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement then
             // this role elswere.
 
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <3>;
+            layers = <27>;
         };
 
         iPad_SwitchToEN {
