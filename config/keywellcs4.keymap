@@ -701,7 +701,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 29 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 29 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -710,7 +710,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 29 &tog_of 2 &tog_of 3 &tog_on 4 &tog_on 1 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_on 1 &tog_on 4 &tog_of 29 &tog_of 2 &tog_of 3 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -719,7 +719,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 29>;
+            bindings = <&bt BT_SEL 2 &tog_on 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 29>;
             label = "UBUNTUMACRO";
         };
 
@@ -1055,7 +1055,7 @@
             >;
         };
 
-        EN_Colemak {
+        To-Qwerty-Translator {
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 10 L  &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
