@@ -1044,7 +1044,14 @@
             >;
         };
 
-        OS-in-EN-QWERTY {
+        Mac-EN-QWERTY {
+            // Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
+            // This allows to type on devices where Colemak is not supported.
+            // Use Cases:
+            //     - iPad
+            //     - other people's machines
+            //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
+
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 10 L  &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
@@ -1053,8 +1060,13 @@
             >;
         };
 
-        OS-in-UA-QWERTY {
-            // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
+        Mac-UA-QWERTY {
+            // Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
+            // This allows to type on devices where Colemak is not supported.
+            // Use Cases:
+            //     - iPad
+            //     - other people's machines
+            //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
 
             bindings = <
 &kp Z                          &kp I                 &Layer_Tap_Timeless_Left 28 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 10 K  &Layer_Tap_Timeless_Right 28 E  &kp B              &kp LEFT_SHIFT
@@ -1064,7 +1076,7 @@
             >;
         };
 
-        Mac-in-UA-QWERTY-Shortcuts {
+        Mac-HRM-UA-QWERTY {
             display-name = "ToDo-Mege- Differs from iPad only by Global";
             bindings = <
 &trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
@@ -1074,7 +1086,11 @@
             >;
         };
 
-        iPad_Native_Globe {
+        iPad-HRM-EN-QWERTY {
+        // Only Globe
+        // Brings back normal standard ZMK Globe. Why not re-uses Mac's one? Because there is nothing to re-use:
+        // MacOS ignores avaluabuk in ZMK GLOBE, so Mac's layer is already hacked and iPad should revet hack to defaults
+
             bindings = <
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
@@ -1083,7 +1099,7 @@
             >;
         };
 
-        iPad_UK_Phonetic_Shortcut_WA {
+        iPad-HRM-UA-QWERTY {
             display-name = "iPad-UK-ShortCutsFix";
             bindings = <
 &trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
