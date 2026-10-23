@@ -1350,16 +1350,17 @@
            &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none
             >;
         };
-    };
-
-    Ubuntu {
-        bindings = <
+        Ubuntu {
+            bindings = <
 &kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 15 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &UbuntuAppSwWA_Timeless 0 Z  &lt 22 X             &lt 23 C             &lt 21 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
                              &trans               &trans               &trans                         &lt 14 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
         >;
     };
+    };
+
+
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
