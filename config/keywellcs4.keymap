@@ -1053,10 +1053,10 @@
             //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
 
             bindings = <
-&kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 10 L  &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
-&Layer_Tap_Timeless_Left 13 Z  &lt 22 X              &lt 23 C                       &lt 21 V                       &Layer_Tap_Timeless_Left 12 B  &kp K                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 8             &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      &Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 7 SPACE
+&kp Q                          &kp W                 			 &Layer_Tap_Timeless_Left 28 F  	  &P_Tabs_Timeless_left 0 P      &kp G                          	&kp J                       &Layer_Tap_Timeless_Right 10 L  &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 A  &MacOS_Control_non_en_fix_LHRM 0 R   &hml LALT S                    &MacOS_CMD_non_en_fix_LHRM 0 T                    &D_Tasks_Timeless_left 0 D  &kp H            &MacOS_CMD_non_en_fix_RHRM 0 N                     &hmr LALT E  &MacOS_Control_non_en_fix_RHRM 0 I           &MacOS_Globe_non_en_fix_RHRM 0 O
+&Layer_Tap_Timeless_Left 13 Z  &lt 22 X              			 &lt 23 C                             &lt 21 V                       &Layer_Tap_Timeless_Left 12 B  	&kp K                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
+                               &tog_on 8             			 &mo 27                         	  &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      	&Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 7 SPACE
             >;
         };
 
@@ -1069,20 +1069,22 @@
             //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
 
             bindings = <
-&kp Z                          &kp I                 &Layer_Tap_Timeless_Left 28 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 10 K  &Layer_Tap_Timeless_Right 28 E  &kp B              &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H            &hml LALT C                &hml LEFT_COMMAND N                &D_Tasks_Timeless_left 0 L  &kp X                           &hmr LEFT_COMMAND Y             &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
-&Layer_Tap_Timeless_Left 13 P  &lt 22 LEFT_BRACKET   &lt 23 W                       &lt 21 D                   &Layer_Tap_Timeless_Left 12 COMMA  &kp R                       &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
-                               &trans                &trans                         &trans                     &trans                             &trans                      &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 6 SPACE
+&kp Z                          &kp I                 			 &Layer_Tap_Timeless_Left 28 A  		       &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 10 K  &Layer_Tap_Timeless_Right 28 E  &kp B              &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H            &hml LALT C                &MacOS_CMD_non_en_fix_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                           &MacOS_CMD_non_en_fix_RHRM 0 Y             &hmr LALT T        &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
+&Layer_Tap_Timeless_Left 13 P  &lt 22 LEFT_BRACKET   			 &lt 23 W                      				   &lt 21 D                   &Layer_Tap_Timeless_Left 12 COMMA  &kp R                       &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
+                               &trans                			 &trans                      				   &trans                     &trans                             &trans                      &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 6 SPACE
             >;
         };
 
-        Mac-HRM-UA-QWERTY {
-            display-name = "ToDo-Mege- Differs from iPad only by Global";
+        Free-Place {
+        // ⚠️ Seems not used and not neded anymore beacause. HRM fixes now changed host.
+        // mid-old name "Mac-HRM-UA-QWERTY".
+            display-name = "Not Used";
             bindings = <
-&trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
-&kp LEFT_SHIFT  &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
-&trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
-                &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans                            &trans
+&none          &none                            &none                              &none  &none                          &none  &none  &none                          &none  &none
+&none          &none                             &none                               &none  &none                           &none  &none  &none                           &none  &none                               &none
+&none          &none                            &none                              &none  &none                          &none  &none  &none                          &none  &none
+                &none                            &none                              &none  &none                          &none  &none  &none                          &none  &none                              &none                            &none
             >;
         };
 
@@ -1340,9 +1342,9 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 6        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
+&tog 1     &tog 2      &tog 3      &none       &tog 6        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
 &none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
+&trans     &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
            &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
             >;
         };
