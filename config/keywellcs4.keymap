@@ -741,9 +741,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 1 &tog_of 2 &kt_on LCMD>,
+                <&kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&kt_off LCMD &tog_on 1 &tog_on 2>;
+                <&kt_off LCMD>;
         };
 
         MacControlShrtctNonEN_WA_Macro: ControlShortcutsNonEN_WA {
@@ -755,9 +755,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 1 &tog_of 2 &kt_on LEFT_CONTROL>,
+                <&kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &tog_on 1 &tog_on 2>;
+                <&kt_off LEFT_CONTROL>;
         };
 
         MacKarabinerUK_Macro: MacKarabinerUK {
@@ -840,9 +840,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 1 &tog_of 2 &kt_on RIGHT_CONTROL>,
+                <&kt_on RIGHT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_CONTROL &tog_on 1 &tog_on 2>;
+                <&kt_off RIGHT_CONTROL>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
         };
