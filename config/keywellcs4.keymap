@@ -1113,6 +1113,29 @@
             >;
         };
 
+//        iPad-HRM-EN-QWERTY {
+//            // Only Globe
+//            // Brings back normal standard ZMK Globe. Why not re-uses Mac's one? Because there is nothing to re-use:
+//            // MacOS ignores avaluabuk in ZMK GLOBE, so Mac's layer is already hacked and iPad should revet hack to defaults
+//
+//            bindings = <
+//&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+//&kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
+//&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+//                &trans        &trans  &mt LA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
+//            >;
+//        };
+//
+//        iPad-HRM-UA-QWERTY {
+//            display-name = "iPad-UK-ShortCutsFix";
+//            bindings = <
+//&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+//&kp LEFT_SHIFT  &iOS_Globe_non_qwerty_fix_LHRM 0 F  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &iOS_Globe_non_qwerty_fix_RHRM 0 J
+//&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+//                &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans                              &trans
+//            >;
+//        };
+//
         Symbols-UA_QWERTY {
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
