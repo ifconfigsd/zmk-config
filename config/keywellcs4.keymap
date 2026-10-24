@@ -1075,13 +1075,17 @@
             >;
         };
 
-        Not-Used {
-            display-name = "Not Used";
+        Base_Symbols {
+            //        &hml LEFT_COMMAND LEFT_PARENTHESIS
+            //                  is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
+            //                  So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
+            //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
+
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-       &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT P                       &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
+                                &trans     &trans         &mo 24            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
@@ -1108,7 +1112,7 @@
             >;
         };
 
-        Symbols_UK_QWERTY {
+        Symbols-UA_QWERTY {
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)               &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LEFT_ALT LA(LC(COLON))       &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
@@ -1117,7 +1121,7 @@
             >;
         };
 
-        Symbols_EN {
+        Symbols-EN-QWERTY {
             //        &hml LEFT_COMMAND LEFT_PARENTHESIS
             //                  is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
             //                  So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
