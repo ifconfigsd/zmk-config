@@ -836,9 +836,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_on 1 &tog_of 2 &kt_on RIGHT_CONTROL>,
+                <&tog_on 1 &tog_of 2 &kt_on GLOBE>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_CONTROL &tog_of 1 &tog_on 2>;
+                <&kt_off GLOBE &tog_of 1 &tog_on 2>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
         };
@@ -1034,7 +1034,7 @@
         Base {
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 26 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 8 U  &Layer_Tap_Timeless_Right 26 I  &kp O        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr RIGHT_CONTROL SEMI
+&kp LEFT_SHIFT                 &hml GLOBE A          &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X              &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
                                &tog_on 6             &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER                &Thumb_HT_VeryShort 3 SPACE
             >;
@@ -1050,7 +1050,7 @@
 
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X              &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
                                &tog_on 6             &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 5 SPACE
             >;
