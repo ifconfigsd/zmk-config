@@ -1035,16 +1035,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base { // ✅
+        Base {
             bindings = <
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 28 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 10 U  &Layer_Tap_Timeless_Right 28 I  &kp O        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                           &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr RIGHT_CONTROL SEMI
 &Layer_Tap_Timeless_Left 13 Z  &lt 22 X              &lt 23 C                       &lt 21 V                       &Layer_Tap_Timeless_Left 12 B  &kp N                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 8             &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      &Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER                &Thumb_HT_VeryShort 7 SPACE
+                               &tog_on 8             &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 9 TAB      &Thumb_HT_Normal 8 ESCAPE   &none                           &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER                &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
-        Mac-EN-QWERTY { // ✅
+        Mac-EN-QWERTY {
             // Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
             // This allows to type on devices where Colemak is not supported.
             // Use Cases:
@@ -1060,13 +1060,14 @@
             >;
         };
 
-        Mac-UA-QWERTY { // ✅
+        Mac-UA-QWERTY {
             // Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
             // This allows to type on devices where Colemak is not supported.
             // Use Cases:
             //     - iPad
             //     - other people's machines
             //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
+
             bindings = <
 &kp Z                          &kp I                             &Layer_Tap_Timeless_Left 28 A       &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 10 K  &Layer_Tap_Timeless_Right 28 E  &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &hml LALT C                &MacOS_CMD_non_en_fix_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                           &MacOS_CMD_non_en_fix_RHRM 0 Y  &hmr LALT T        &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
@@ -1089,7 +1090,7 @@
             >;
         };
 
-        iPad-HRM-EN-QWERTY { // ✅
+        iPad-HRM-EN-QWERTY {
             // Only Globe
             // Brings back normal standard ZMK Globe. Why not re-uses Mac's one? Because there is nothing to re-use:
             // MacOS ignores avaluabuk in ZMK GLOBE, so Mac's layer is already hacked and iPad should revet hack to defaults
@@ -1102,7 +1103,7 @@
             >;
         };
 
-        iPad-HRM-UA-QWERTY { // ✅
+        iPad-HRM-UA-QWERTY {
             display-name = "iPad-UK-ShortCutsFix";
             bindings = <
 &trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
