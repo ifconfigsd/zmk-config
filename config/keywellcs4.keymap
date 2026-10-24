@@ -1084,8 +1084,8 @@
 
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT P                       &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
+&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT LS(P)                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp P                                &kp PERIOD                        &kp QUESTION
                                 &trans     &trans         &mo 24            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
