@@ -510,9 +510,10 @@
         };
 
         Mac_SwitchToUK {
-            //  Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
-            //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
-
+            /*
+                Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
+                On this depends syncronized swithcing of OS language & ZMK layouts for iPad
+            */
             bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
@@ -520,9 +521,10 @@
         };
 
         Mac_SwitchToEN {
-            //  Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
-            //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
-
+            /*
+                Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
+                On this depends syncronized swithcing of OS language & ZMK layouts for iPad
+            */
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
             layers = <0>;
@@ -530,9 +532,10 @@
         };
 
         Mac_UK_Accent_DeadKey_ToDo {
-            // Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement then
-            // this role elswere.
-
+            /*
+                Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement
+                then this role elswere.
+            */
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
@@ -541,7 +544,6 @@
 
         iPad_SwitchToEN {
             // Read in Mac counterpat combo
-
             bindings = <&iPadEN_Macro>;
             key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -557,7 +559,6 @@
 
         iPadENSupresWhenAlready {
             // read mac counterpart combos or search "supress"
-
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <190>;
@@ -565,7 +566,6 @@
 
         iPadUKSupressWhenAlready {
             // read mac counterpart combos or search "supress"
-
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <190>;
@@ -650,10 +650,12 @@
         #include "includes/open_app_shortcuts_macros.dtsi"
 
         CmdTAbAppSW_Macro: CmdTAbReleaseTabCombo {
-            //    - ! Don't asign to holds of hold-taps as in standard user press CMD+TAB faster and it will not trigger in time
-            //    - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
-            //  protocol level and then processed out of order
-
+            /*
+                - ! Don't asign to holds of hold-taps as in standard user press CMD+TAB faster and it will not trigger
+                  in time
+                - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
+                  protocol level and then processed out of order
+            */
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -710,7 +712,6 @@
 
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
             // Supports hyper by standing it above hrm layer. ie swithes to plain letters + hyperKey
-
             compatible = "zmk,behavior-macro";
             label = "HYPERMACTIMELESSMACRO";
             #binding-cells = <0>;
@@ -729,8 +730,10 @@
         };
 
         MacCmdShortcutsNonEN_WA_Macro: MacOSCmdShortcutsNonEN_WA {
-            // f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer - make it separete shortcut (like ol' LE / LU) ^16499de1
-
+            /*
+                f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer -
+                make it separete shortcut (like ol' LE / LU) ^16499de1
+            */
             compatible = "zmk,behavior-macro";
             label = "MACOSCMDSHORTCUTSNONEN_WA";
             tap-ms = <0>;
@@ -758,12 +761,12 @@
 
         MacKarabinerUK_Macro: MacKarabinerUK {
             /*
-			Macro is mandatory. As keyboard must switch layout too (in addition to sending langeage changing key sequence
-			to karabener which is possible wo macro)
+                Macro is mandatory. As keyboard must switch layout too (in addition to sending langeage changing key sequence
+                to karabener which is possible wo macro)
 
-			For rdp/vnc/remote Karabiner doesn't work. To switch system layouts remotely bypass karabiner.
-			For example by using Apple Script added as a service with shortcut.
-		*/
+                For rdp/vnc/remote Karabiner doesn't work. To switch system layouts remotely bypass karabiner.
+                For example by using Apple Script added as a service with shortcut.
+	    	*/
 
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
@@ -1056,13 +1059,14 @@
         };
 
         Apple-EN-QWERTY {
-            // Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
-            // This allows to type on devices where Colemak is not supported.
-            // Use Cases:
-            //     - iPad
-            //     - other people's machines
-            //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
-
+            /*
+                Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
+                This allows to type on devices where Colemak is not supported.
+                Use Cases:
+                    - iPad
+                    - other people's machines
+                    - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
+            */
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
@@ -1072,13 +1076,14 @@
         };
 
         Apple-UA-QWERTY {
-            // Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
-            // This allows to type on devices where Colemak is not supported.
-            // Use Cases:
-            //     - iPad
-            //     - other people's machines
-            //     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
-
+            /*
+                Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
+                This allows to type on devices where Colemak is not supported.
+                Use Cases:
+                    - iPad
+                    - other people's machines
+                    - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
+            */
             bindings = <
 &kp Z                          &kp I                             &Layer_Tap_Timeless_Left 26 A       &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 26 E  &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &hml LALT C                &MacOS_CMD_non_en_fix_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &hmr LALT T        &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
@@ -1088,11 +1093,12 @@
         };
 
         Mac-EN-UA-Colemak-Symbols {
-            //        &hml LEFT_COMMAND LEFT_PARENTHESIS
-            //                  is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
-            //                  So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
-            //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
-
+            /*
+            &hml LEFT_COMMAND LEFT_PARENTHESIS
+                      is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
+                      So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
+                      when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
+            */
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT LS(P)                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
@@ -1111,11 +1117,12 @@
         };
 
         Apple-EN-QWERTY-Symbols {
-            //        &hml LEFT_COMMAND LEFT_PARENTHESIS
-            //                  is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
-            //                  So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
-            //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
-
+            /*
+                &hml LEFT_COMMAND LEFT_PARENTHESIS
+                    is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
+                    So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
+                    when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
+            */
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
@@ -1125,13 +1132,13 @@
         };
 
         Numbers_And_Media {
-            //
-            //      ← → Arrows - Youtube, VLC, some online players: skip Fast Forward/Backward/Rewind
-            //                   Apple Music: duplicate function of Next/Previous track
-            //      J/Shift    - Youtube: Faster Rewind (J)
-            //      L          - Youtube: Fast Forward
-            //      Shift      - compatibilyty for Scrensot Shortcuts & moving Tabs to N-th Desktop.
-
+            /*
+                ← → Arrows - Youtube, VLC, some online players: skip Fast Forward/Backward/Rewind
+                           Apple Music: duplicate function of Next/Previous track
+                J/Shift    - Youtube: Faster Rewind (J)
+                L          - Youtube: Fast Forward
+                Shift      - compatibilyty for Scrensot Shortcuts & moving Tabs to N-th Desktop.
+            */
             bindings = <
 &kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
@@ -1152,7 +1159,6 @@
 
         NAV-Apple-TabsNav_rhsLayoutLhs {
             // F20 shortcuts here is an Amethyst layots selection. See more F20 in other layots
-
             bindings = <
 &none  &none  &kp LC(F20)      &kp LA(LS(F20))  &none        &none            &Web_Page_Back_Macro  &none        &none    &Web_Page_Forward_Macro
 &none  &none  &kp LS(LC(F20))  &none            &kp LG(F20)  &kp LG(LS(F20))  &none                 &kp LS(TAB)  &kp TAB  &kp LS(TAB)              &kp TAB
@@ -1180,23 +1186,24 @@
         };
 
         NAV-Apple-AppWindowsCycle {
-            // F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
-            // F11-xx - Switch between Idea/others Focus Editor (E-Editor) & last Tool Window (I-Instruments)
-            // App Window Switching:
-            //        - on Right: is regular way to switch. There only left and right arrows
-            //        - on Left: a) is onehanded switcing, I need when another hand ocupied with mouse. When left hand
-            //                      enters this layer with Z, it's motorics is limited and not its not pricise. Thus I
-            //                      made for left hand more keys to switch windows than two keys for the right hand.
-            //                      They are at positions A=R and S=T.
-            //                   b) Plus, one handed swithing with layer is dublicated by AppWindowsSw.. combos.
-            //                      Because due to mentioned bad motirics, I often roll keys and have false poritives
-            //                      whet A/R/S/T resolved to taps. So I've edded combos wich envolve same keys Z+ARST
-            //                      wich handles earlier before false positive tap. In such way if I roll - combos cover
-            //                      me and make window swithch. And when I not roll - hold tap layer.
-            //         Check commits for denails: e29b7d37b4909a3cf55622e44247970dd6e427ba
-            //                                    7906a3aa615c9d78b2ecc074df472e8c55564eea
-            //                                    1f7d926b460bcf9e383ee0efb16c31db201d0cb5
-
+            /*
+                F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
+                F11-xx - Switch between Idea/others Focus Editor (E-Editor) & last Tool Window (I-Instruments)
+                App Window Switching:
+                    - on Right: is regular way to switch. There only left and right arrows
+                    - on Left: a) is onehanded switcing, I need when another hand ocupied with mouse. When left hand
+                                  enters this layer with Z, it's motorics is limited and not its not pricise. Thus I
+                                  made for left hand more keys to switch windows than two keys for the right hand.
+                                  They are at positions A=R and S=T.
+                               b) Plus, one handed swithing with layer is dublicated by AppWindowsSw.. combos.
+                                  Because due to mentioned bad motirics, I often roll keys and have false poritives
+                                  whet A/R/S/T resolved to taps. So I've edded combos wich envolve same keys Z+ARST
+                                  wich handles earlier before false positive tap. In such way if I roll - combos cover
+                                  me and make window swithch. And when I not roll - hold tap layer.
+                     Check commits for denails: e29b7d37b4909a3cf55622e44247970dd6e427ba
+                                                7906a3aa615c9d78b2ecc074df472e8c55564eea
+                                                1f7d926b460bcf9e383ee0efb16c31db201d0cb5
+            */
             bindings = <
 &none  &none              &none              &none          &none          &none  &kp LS(LG(LC(F20)))  &none              &none        &none
 &none  &kp LS(LG(GRAVE))  &kp LS(LG(GRAVE))  &kp LG(GRAVE)  &kp LG(GRAVE)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(GRAVE))  &kp LC(F11)  &kp LC(LS(F11))  &kp LG(GRAVE)
@@ -1226,7 +1233,6 @@
 
         NAV-NotExist-Ubuntu-BrowGrupNav {
             // On ubuntu I Use only Chrome/Firefox, and both has no option to navigate between tab groups by keyboard
-
             display-name = "Not-Used. Read comments";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
@@ -1264,8 +1270,10 @@
         };
 
         mouse_layer {
-            //cs4:check:   shortcuts on mouse layer is "get info" on files and open containig dir in music app and are temporary amenity while im reviewing a ton of music
-
+            /*
+                cs4:check:   shortcuts on mouse layer is "get info" on files and open containig dir in music app and are
+                temporary amenity while im reviewing a ton of music
+            */
             display-name = "mouse";
             bindings = <
 &trans  &trans  &kp LS(LG(R))  &kp LG(I)  &none   &none   &none            &none           &none           &none
@@ -1321,9 +1329,11 @@
         };
 
         Fx {
-        /* Set by "Conditional Alternative" technique.
-            Thus Must above both layers from which its turns on: Mac Symbols, and Plain/Hyper.
-        */
+            /*
+                Set by "Conditional Alternative" technique.
+                Involves: Layer key on Mac Symbols and Plain/Hyper.
+                Thus Must be above both layers from which its turns on.
+            */
             bindings = <
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
