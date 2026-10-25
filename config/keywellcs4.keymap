@@ -536,7 +536,7 @@
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <25>;
+            layers = <26>;
         };
 
         iPad_SwitchToEN {
@@ -718,12 +718,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 24>,
+                <&mo 23>,
                 <&macro_press>,
                 <&kp F16>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 24>,
+                <&mo 23>,
                 <&macro_release>,
                 <&kp F16>;
         };
@@ -1045,7 +1045,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 8 U  &Layer_Tap_Timeless_Right 26 I  &kp O        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
+                               &tog_on 6     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
@@ -1061,7 +1061,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 5 SPACE
+                               &tog_on 6     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 5 SPACE
             >;
         };
 
@@ -1091,40 +1091,16 @@
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT LS(P)                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp P                                &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &mo 22            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+                                &trans     &trans         &mo 25            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
-
-        //        iPad-HRM-EN-QWERTY {
-        //            // Only Globe
-        //            // Brings back normal standard ZMK Globe. Why not re-uses Mac's one? Because there is nothing to re-use:
-        //            // MacOS ignores avaluabuk in ZMK GLOBE, so Mac's layer is already hacked and iPad should revet hack to defaults
-        //
-        //            bindings = <
-        //&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-        //&kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
-        //&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-        //                &trans        &trans  &mt LA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
-        //            >;
-        //        };
-        //
-        //        iPad-HRM-UA-QWERTY {
-        //            display-name = "iPad-UK-ShortCutsFix";
-        //            bindings = <
-        //&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
-        //&kp LEFT_SHIFT  &iOS_Globe_non_qwerty_fix_LHRM 0 F  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &iOS_Globe_non_qwerty_fix_RHRM 0 J
-        //&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
-        //                &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans                              &trans
-        //            >;
-        //        };
-        //
 
         Apple-UA-QWERTY-Symbols {
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)               &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LEFT_ALT LA(LC(COLON))       &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
 &kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)               &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
-                                &trans     &trans                 &mo 22                        &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
+                                &trans     &trans                 &mo 25                        &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
             >;
         };
 
@@ -1138,7 +1114,7 @@
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &mo 22            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+                                &trans     &trans         &mo 25            &Symbol_Sys_Layout_Macro            &Emoji_Sys_Layout_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
@@ -1227,7 +1203,7 @@
             display-name = "NAV-Ubuntu";
             bindings = <
 &none   &none   &none             &none             &mo 14  &kp HOME  &kp PAGE_UP    &none     &none     &none
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 23  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 22  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &none   &none   &none             &none             &none   &kp END   &kp PAGE_DOWN  &none     &none     &none
         &trans  &trans            &trans            &trans  &trans    &trans         &trans    &none     &trans        &trans     &trans
             >;
@@ -1320,15 +1296,6 @@
             >;
         };
 
-        F1_Fx {
-            bindings = <
-&none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
-&none   &none              &none                &none        &none                &none   &kp F1  &kp F2  &kp F3  &kp F12
-        &trans             &trans               &trans       &trans               &trans  &trans  &trans  &trans  &trans   &trans   &trans
-            >;
-        };
-
         NAV-Ubuntu-line-st-end {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none     &none  &none
@@ -1347,10 +1314,19 @@
             >;
         };
 
+        F1_Fx {
+            bindings = <
+&none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
+&none   &none              &none                &none        &none                &none   &kp F1  &kp F2  &kp F3  &kp F12
+        &trans             &trans               &trans       &trans               &trans  &trans  &trans  &trans  &trans   &trans   &trans
+            >;
+        };
+
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 1  &tog 2      &tog 3      &none       &tog 4        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 22
+&tog 1  &tog 2      &tog 3      &none       &tog 4        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
 &none   &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
 &trans  &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
         &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
