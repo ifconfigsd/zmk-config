@@ -797,7 +797,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 27 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 0 &tog_of 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 27 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -806,7 +806,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 1 &tog_on 0 &tog_of 27 &tog_of 2 &tog_of 3 &tog_of 0 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_on 1 &tog_of 2 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -815,7 +815,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_on 1 &tog_of 2 &tog_of 3 &tog_of 0 &tog_of 0 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 27>;
+            bindings = <&bt BT_SEL 2 &tog_on 27 &tog_of 2 &tog_of 3 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "UBUNTUMACRO";
         };
 
@@ -903,7 +903,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 0>;
+            bindings = <&kp CAPSLOCK &tog_on 2>;
             label = "IPADUKMACRO";
         };
 
@@ -912,7 +912,7 @@
             wait-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 0>;
+            bindings = <&kp CAPSLOCK &tog_of 2>;
             label = "IPADENMACRO";
         };
 
@@ -922,9 +922,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 0 &tog_of 2 &kt_on LCMD>,
+                <&tog_of 2 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 0 &tog_on 2 &kt_off LCMD>;
+                <&tog_on 2 &kt_off LCMD>;
 
             label = "CMDSHORTCUTSNONQWERTY_WA";
         };
@@ -935,9 +935,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 0 &tog_of 2 &kt_on LEFT_CONTROL>,
+                <&tog_of 2 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 0 &tog_on 2 &kt_off LEFT_CONTROL>;
+                <&tog_on 2 &kt_off LEFT_CONTROL>;
 
             label = "IPADCONTROLSHORTCUTNONQWERTY_WA";
         };
@@ -963,9 +963,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 0 &tog_of 2 &kt_on GLOBE>,
+                <&tog_of 2 &kt_on GLOBE>,
                 <&macro_pause_for_release>,
-                <&tog_on 0 &tog_on 2 &kt_off GLOBE>;
+                <&tog_on 2 &kt_off GLOBE>;
 
             label = "IPADGLOBESHORTCUTNONQWERTY_WA";
         };
