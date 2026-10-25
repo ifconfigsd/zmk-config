@@ -702,55 +702,56 @@
             layers = <0>;
         };
 
-//---------------------------------------------    For OS in QWERTY    ---------------------------------------------
-UA_QWERTY_SC {
-    bindings = <&kp O>;
-    key-positions = <1 2>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        //---------------------------------------------    For OS in QWERTY    ---------------------------------------------
 
-UA_QWERTY_JU {
-    bindings = <&kp PERIOD>;
-    key-positions = <7 8>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_SC {
+            bindings = <&kp O>;
+            key-positions = <1 2>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_QWERTY_JI {
-    bindings = <&kp RIGHT_BRACKET>;
-    key-positions = <19 20>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_JU {
+            bindings = <&kp PERIOD>;
+            key-positions = <7 8>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_QWERTY_G_tverde {
-    bindings = <&kp GRAVE>;
-    key-positions = <3 2>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_JI {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <19 20>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_QWERTY_ZJ {
-    bindings = <&kp SEMI>;
-    key-positions = <6 7>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_G_tverde {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 2>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_QWERTY_Miaki_ZNAK {
-    bindings = <&kp M>;
-    key-positions = <18 27>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_ZJ {
+            bindings = <&kp SEMI>;
+            key-positions = <6 7>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_QWERTY_JE {
-    bindings = <&kp APOSTROPHE>;
-    key-positions = <18 19>;
-    timeout-ms = <190>;
-    layers = <2>;
-};
+        UA_QWERTY_Miaki_ZNAK {
+            bindings = <&kp M>;
+            key-positions = <18 27>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
+
+        UA_QWERTY_JE {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <18 19>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -1164,7 +1165,7 @@ UA_QWERTY_JE {
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 8 U  &Layer_Tap_Timeless_Right 26 I  &kp O        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
+                               &tog_on 6     &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
