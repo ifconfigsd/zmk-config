@@ -1320,7 +1320,10 @@
             >;
         };
 
-        F1_Fx {
+        Fx {
+        /* Set by "Conditional Alternative" technique.
+            Thus Must above both layers from which its turns on: Mac Symbols, and Plain/Hyper.
+        */
             bindings = <
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
