@@ -514,6 +514,7 @@
                 Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
+
             bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
@@ -525,6 +526,7 @@
                 Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
+
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
             layers = <0>;
@@ -536,6 +538,7 @@
                 Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement
                 then this role elswere.
             */
+
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
@@ -544,6 +547,7 @@
 
         iPad_SwitchToEN {
             // Read in Mac counterpat combo
+
             bindings = <&iPadEN_Macro>;
             key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -559,6 +563,7 @@
 
         iPadENSupresWhenAlready {
             // read mac counterpart combos or search "supress"
+
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <190>;
@@ -566,6 +571,7 @@
 
         iPadUKSupressWhenAlready {
             // read mac counterpart combos or search "supress"
+
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <190>;
@@ -645,56 +651,56 @@
             layers = <0 1 2 3>;
         };
 
-//-------------------------------------------    For OS in UA-Colemak    -------------------------------------------
-UA_COLEMAK_SC {
-    bindings = <&kp O>;
-    key-positions = <1 2>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        //-------------------------------------------    For OS in UA-Colemak    -------------------------------------------
 
-UA_COLEMAK_JU {
-    bindings = <&kp PERIOD>;
-    key-positions = <7 8>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_SC {
+            bindings = <&kp KP_NUMBER_1>;
+            key-positions = <1 2>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_COLEMAK_JI {
-    bindings = <&kp RIGHT_BRACKET>;
-    key-positions = <19 20>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_JU {
+            bindings = <&kp KP_NUMBER_4>;
+            key-positions = <7 8>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_COLEMAK_G_tverde {
-    bindings = <&kp GRAVE>;
-    key-positions = <3 2>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_JI {
+            bindings = <&kp KP_NUMBER_5>;
+            key-positions = <19 20>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_COLEMAK_ZJ {
-    bindings = <&kp SEMI>;
-    key-positions = <6 7>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_G_tverde {
+            bindings = <&kp KP_NUMBER_2>;
+            key-positions = <3 2>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_COLEMAK_Miaki_ZNAK {
-    bindings = <&kp M>;
-    key-positions = <18 27>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_ZJ {
+            bindings = <&kp KP_NUMBER_0>;
+            key-positions = <6 7>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
-UA_COLEMAK_JE {
-    bindings = <&kp APOSTROPHE>;
-    key-positions = <18 19>;
-    timeout-ms = <190>;
-    layers = <2 3 6 7>;
-};
+        UA_COLEMAK_Miaki_ZNAK {
+            bindings = <&kp KP_NUMBER_7>;
+            key-positions = <18 27>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
 
+        UA_COLEMAK_JE {
+            bindings = <&kp KP_NUMBER_3>;
+            key-positions = <18 19>;
+            timeout-ms = <190>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -707,6 +713,7 @@ UA_COLEMAK_JE {
                 - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
                   protocol level and then processed out of order
             */
+
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -763,6 +770,7 @@ UA_COLEMAK_JE {
 
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
             // Supports hyper by standing it above hrm layer. ie swithes to plain letters + hyperKey
+
             compatible = "zmk,behavior-macro";
             label = "HYPERMACTIMELESSMACRO";
             #binding-cells = <0>;
@@ -785,6 +793,7 @@ UA_COLEMAK_JE {
                 f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer -
                 make it separete shortcut (like ol' LE / LU) ^16499de1
             */
+
             compatible = "zmk,behavior-macro";
             label = "MACOSCMDSHORTCUTSNONEN_WA";
             tap-ms = <0>;
@@ -1118,6 +1127,7 @@ UA_COLEMAK_JE {
                     - other people's machines
                     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
             */
+
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
@@ -1135,6 +1145,7 @@ UA_COLEMAK_JE {
                     - other people's machines
                     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
             */
+
             bindings = <
 &kp Z                          &kp I                             &Layer_Tap_Timeless_Left 26 A       &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 26 E  &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &hml LALT C                &MacOS_CMD_non_en_fix_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &hmr LALT T        &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
@@ -1150,6 +1161,7 @@ UA_COLEMAK_JE {
                       So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
                       when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
             */
+
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT LS(P)                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
@@ -1174,6 +1186,7 @@ UA_COLEMAK_JE {
                     So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
                     when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
             */
+
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
@@ -1190,6 +1203,7 @@ UA_COLEMAK_JE {
                 L          - Youtube: Fast Forward
                 Shift      - compatibilyty for Scrensot Shortcuts & moving Tabs to N-th Desktop.
             */
+
             bindings = <
 &kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
@@ -1210,6 +1224,7 @@ UA_COLEMAK_JE {
 
         NAV-Apple-TabsNav_rhsLayoutLhs {
             // F20 shortcuts here is an Amethyst layots selection. See more F20 in other layots
+
             bindings = <
 &none  &none  &kp LC(F20)      &kp LA(LS(F20))  &none        &none            &Web_Page_Back_Macro  &none        &none    &Web_Page_Forward_Macro
 &none  &none  &kp LS(LC(F20))  &none            &kp LG(F20)  &kp LG(LS(F20))  &none                 &kp LS(TAB)  &kp TAB  &kp LS(TAB)              &kp TAB
@@ -1255,6 +1270,7 @@ UA_COLEMAK_JE {
                                                 7906a3aa615c9d78b2ecc074df472e8c55564eea
                                                 1f7d926b460bcf9e383ee0efb16c31db201d0cb5
             */
+
             bindings = <
 &none  &none              &none              &none          &none          &none  &kp LS(LG(LC(F20)))  &none              &none        &none
 &none  &kp LS(LG(GRAVE))  &kp LS(LG(GRAVE))  &kp LG(GRAVE)  &kp LG(GRAVE)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(GRAVE))  &kp LC(F11)  &kp LC(LS(F11))  &kp LG(GRAVE)
@@ -1284,6 +1300,7 @@ UA_COLEMAK_JE {
 
         NAV-NotExist-Ubuntu-BrowGrupNav {
             // On ubuntu I Use only Chrome/Firefox, and both has no option to navigate between tab groups by keyboard
+
             display-name = "Not-Used. Read comments";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
@@ -1325,6 +1342,7 @@ UA_COLEMAK_JE {
                 cs4:check:   shortcuts on mouse layer is "get info" on files and open containig dir in music app and are
                 temporary amenity while im reviewing a ton of music
             */
+
             display-name = "mouse";
             bindings = <
 &trans  &trans  &kp LS(LG(R))  &kp LG(I)  &none   &none   &none            &none           &none           &none
@@ -1398,6 +1416,7 @@ UA_COLEMAK_JE {
                        - Fx layer must be on top of the layers to which "A" & "B" keys switch
                        - macro that depresses F16 of hyper key.
             */
+
             bindings = <
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
