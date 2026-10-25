@@ -1331,8 +1331,21 @@
         Fx {
             /*
                 Set by "Conditional Alternative" technique.
-                Involves: Layer key on Mac Symbols and Plain/Hyper.
-                Thus Must be above both layers from which its turns on.
+                Usage:
+                    Symbols Thumb key (asume its A) + Hyper Key (asume its B). Order agnostic.
+                Implementation:
+                    As its activation is order agnostic it mens its has two activation pathes: A-B keys, and B-H keys.
+                    A-B:
+                          "A" activates Symbols Layer, where "B" key activates Fx.
+                    B-A
+                        B is already designed to switch to Hyper Layer. But this switching does a bit more to
+                        sustain Hyper flows work - it additinaly helds F16 pressed. Thus when A key is pressed as a
+                        part of Fx switching route -it should not just &mo to Fx (as in A-B route) but depress F16.
+                        For this &mo+depress the "A" key has macro.
+                Impact:
+                       - "A" & "B" keys
+                       - Fx layer must be on top of the layers to which "A" & "B" keys switch
+                       - macro that depresses F16 of hyper key.
             */
             bindings = <
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
