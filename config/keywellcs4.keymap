@@ -488,7 +488,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_UA_7";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&sl 24>;
+            bindings = <&kp M>, <&sl 17>;
         };
     };
 
