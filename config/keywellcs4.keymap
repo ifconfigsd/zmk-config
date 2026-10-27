@@ -489,6 +489,8 @@
             label = "TEST_UA_7";
             #binding-cells = <0>;
             bindings = <&kp M>, <&sl 17>;
+
+            tapping-term-ms = <250>;
         };
     };
 
