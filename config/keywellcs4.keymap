@@ -1481,7 +1481,7 @@
 
             bindings = <
 &none   &none              &none                &none        &none                &none            &kp F7           &kp F8  &kp F9  &kp F10
-&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none            &kp KP_NUMBER_5  &kp F4  &kp F5  &kp F6   &kp F11
+&trans  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LALT D  &hml LEFT_COMMAND F  &none            &kp KP_NUMBER_5  &kp F4  &kp F5  &kp F6   &kp F11
 &none   &none              &none                &none        &none                &kp KP_NUMBER_5  &kp F1           &kp F2  &kp F3  &kp F12
         &trans             &trans               &trans       &trans               &trans           &trans           &trans  &trans  &trans   &trans   &trans
             >;
