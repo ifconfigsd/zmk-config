@@ -488,9 +488,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_UA_7";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&sl 17>;
+            bindings = <&kp H>, <&sl 17>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <350>;
         };
     };
 
@@ -1172,8 +1172,8 @@
         Base {
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 8 U  &Layer_Tap_Timeless_Right 26 I  &kp O        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
-&Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &Test_UA_7                     &kp COMMA                       &kp DOT      &kp FSLH
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &Test_UA_7                     &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
+&Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
                                &tog_on 6     &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
             >;
         };
