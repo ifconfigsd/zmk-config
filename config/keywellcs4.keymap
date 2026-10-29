@@ -155,14 +155,14 @@
             toggle-mode = "off";
         };
 
-        What_this_was_return: holdTapMacroKp {
+        HyperMac_HT_Timeless: holdTapMacroKp {
             compatible = "zmk,behavior-hold-tap";
             label = "Hyper";
-            bindings = <&Sys_Lay_Symbols__3>, <&kp>;
+            bindings = <&HyperMacTimeless_Macro>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <173>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
         MacOS_CMD_non_en_fix_LHRM: MacOS_CMD_non_en_fix_LHRM {
@@ -1224,7 +1224,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 8 U  &Layer_Tap_Timeless_Right 26 I  &kp O        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp N                       &kp M                          &Test_UA_7                      &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 25                         &What_this_was_return 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
+                               &tog_on 6     &mo 25                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
@@ -1242,7 +1242,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &trans                         &What_this_was_return 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 5 SPACE
+                               &tog_on 6     &trans                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 5 SPACE
             >;
         };
 
