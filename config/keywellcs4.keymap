@@ -538,13 +538,13 @@
             layers = <1>;
         };
 
-        Mac_SwitchToUK {
+        Mac_SwitchToUA {
             /*
                 Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&MacKarabinerUK_Macro>;
+            bindings = <&kp LS(F21)>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
@@ -556,7 +556,7 @@
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&MacKarabinerEN_Macro>;
+            bindings = <&kp F21>;
             key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
@@ -899,34 +899,6 @@
                 <&kt_off LEFT_CONTROL &tog_of 1 &tog_on 2>;
         };
 
-        MacKarabinerUK_Macro: MacKarabinerUK {
-            /*
-                Macro is mandatory. As keyboard must switch layout too (in addition to sending langeage changing key sequence
-                to karabener which is possible wo macro)
-
-                For rdp/vnc/remote Karabiner doesn't work. To switch system layouts remotely bypass karabiner.
-                For example by using Apple Script added as a service with shortcut.
-	    	*/
-
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&kp F22>;
-            label = "MACKARABINERUK";
-        };
-
-        MacKarabinerEN_Macro: MacKarabinerEN {
-            // read ^16499de1
-
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&kp F21>;
-            label = "MACKARABINEREN";
-        };
-
         iPad_UA_Macro: iPadUK_Macro {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
@@ -1153,9 +1125,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on F23 &tog_on 28>,
+                <&kt_on RS(F21) &tog_on 28>,
                 <&macro_pause_for_release>,
-                <&kt_off F23 &tog_of 28>;
+                <&kt_off RS(F21) &tog_of 28>;
         };
 
         Emoji_Sys_Layout_macro: Emoji_macro {
@@ -1558,10 +1530,10 @@
 
         Symbols_and_Emoji_Sys_Layouts {
             bindings = <
-&kp Q           &kp W         &kp E                      &kp R                      &kp T            &kp Y   &kp U   &kp I            &kp O                      &kp P
-&kp LEFT_SHIFT  &hml GLOBE A  &Sys_Lay_Symbols_4_HT 0 S  &Sys_Lay_Symbols_3_HT 0 D  &hml LEFT_ALT F  &kp G   &kp H   &hmr LEFT_ALT J  &Sys_Lay_Symbols_3_HT 0 K  &Sys_Lay_Symbols_4_HT 0 L  &hmr GLOBE SEMI
-&kp Z           &kp X         &kp C                      &kp V                      &kp B            &kp N   &kp M   &kp COMMA        &kp DOT                    &kp FSLH
-                &trans        &trans                     &trans                     &trans           &trans  &trans  &trans           &trans                     &trans                     &trans           &trans
+&kp Q           &kp W         &kp E                &kp R            &kp T                &kp Y   &kp U   &kp I            &kp O                      &kp P
+&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL S  &hml LEFT_ALT T  &hml LEFT_COMMAND F  &kp G   &kp H   &hmr LEFT_ALT J  &Sys_Lay_Symbols_3_HT 0 K  &Sys_Lay_Symbols_4_HT 0 L  &hmr GLOBE SEMI
+&kp Z           &kp X         &kp C                &kp V            &kp B                &kp N   &kp M   &kp COMMA        &kp DOT                    &kp FSLH
+                &trans        &trans               &trans           &trans               &trans  &trans  &trans           &trans                     &trans                     &trans           &trans
             >;
         };
     };
