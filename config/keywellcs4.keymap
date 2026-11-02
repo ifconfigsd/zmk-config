@@ -1145,15 +1145,6 @@
         compatible = "zmk,keymap";
 
         Base {
-            bindings = <
-&kp Q                          &kp W         &Layer_Tap_Timeless_Left 27 E  &P_Tabs_Timeless_left 0 R      &kp T                          &kp Y                       &Layer_Tap_Timeless_Right 9 U  &Layer_Tap_Timeless_Right 27 I  &kp O        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL S            &hml LALT D                    &hml LCMD F                    &D_Tasks_Timeless_left 0 G  &kp H                          &hmr LCMD J                     &hmr LALT K  &hmr LEFT_CONTROL L           &hmr GLOBE SEMI
-&Layer_Tap_Timeless_Left 12 Z  &lt 21 X      &lt 22 C                       &lt 20 V                       &Layer_Tap_Timeless_Left 11 B  &kp N                       &kp M                          &Test_UA_7                      &kp DOT      &kp FSLH
-                               &tog_on 7     &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
-            >;
-        };
-
-        Apple-EN-QWERTY {
             /*
                 Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
                 This allows to type on devices where Colemak is not supported.
@@ -1162,6 +1153,15 @@
                     - other people's machines
                     - remote Mac / Machines where you don't bother yourself or not allowed to set Colemak
             */
+            bindings = <
+&kp Q                          &kp W         &Layer_Tap_Timeless_Left 27 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 27 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
+&Layer_Tap_Timeless_Left 12 Z  &lt 21 X      &lt 22 C                       &lt 20 V                       &Layer_Tap_Timeless_Left 11 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
+                               &tog_on 7     &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER        &Thumb_HT_VeryShort 3 SPACE
+            >;
+        };
+
+        Apple-EN-QWERTY {
 
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 27 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 27 U  &kp Y        &kp LEFT_SHIFT
