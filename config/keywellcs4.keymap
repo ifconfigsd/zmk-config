@@ -16,7 +16,6 @@
 // #include "includes/keys_uk_enhanced.h"
 
 #define DEFAULT 0
-#define SYMBOLS_LAYER  1
 #define WARP  21
 #define PRESISION  22
 
