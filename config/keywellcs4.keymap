@@ -404,7 +404,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_UA_7";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sl 17>;
+            bindings = <&kp COMMA>, <&sl 16>;
 
             tapping-term-ms = <350>;
         };
@@ -446,14 +446,14 @@
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
-            layers = <0 1 2>;
+            layers = <0 1>;
             timeout-ms = <150>;
         };
 
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 1 2 3 6 3 4 7 8 9 10 11>;
+            layers = <0 1 2 5 2 3 6 7 8 9 10>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
@@ -494,7 +494,7 @@
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <26>;
+            layers = <25>;
         };
 
         iPad_SwitchToEN {
@@ -532,7 +532,7 @@
         Delete_Word_Mac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
-            layers = <0 1 2>;
+            layers = <0 1>;
             require-prior-idle-ms = <320>;
         };
 
@@ -546,60 +546,60 @@
             bindings = <&kp LG(GRAVE)>;
             key-positions = <21 14>;
             timeout-ms = <150>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         AppWindowsSwPrevP1 {
             bindings = <&kp LG(LS(GRAVE))>;
             key-positions = <21 11>;
             timeout-ms = <150>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         AppWindowsSwPrevP2 {
             bindings = <&kp LG(LS(GRAVE))>;
             key-positions = <21 12>;
             timeout-ms = <150>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         AppWindowsSwNextP2 {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <21 13>;
             timeout-ms = <150>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         MediaLayerStickLikeWP {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <1 3>;
             timeout-ms = <150>;
-            layers = <6>;
+            layers = <5>;
         };
 
         AND {
             bindings = <&AND_macro>;
             key-positions = <7 8>;
-            layers = <4 3>;
+            layers = <3 2>;
         };
 
         OR {
             bindings = <&OR_Macro>;
             key-positions = <21 22>;
-            layers = <4 3>;
+            layers = <3 2>;
             timeout-ms = <100>;
         };
 
         PutWordInQuotes {
             bindings = <&PutWordInQuotes_Macro>;
             key-positions = <19 18>;
-            layers = <4 3>;
+            layers = <3 2>;
         };
 
         KeyCluShowShortcutsLeftCombo {
             bindings = <&leaderKey_1>;
             key-positions = <20 11>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         //-------------------------------------------    For OS in UA-Colemak    -------------------------------------------
@@ -608,49 +608,42 @@
             bindings = <&kp KP_NUMBER_1>;
             key-positions = <1 2>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_JU {
             bindings = <&kp KP_NUMBER_4>;
             key-positions = <7 8>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_JI {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <19 20>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_G_tverde {
             bindings = <&kp KP_NUMBER_2>;
             key-positions = <3 2>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_ZJ {
             bindings = <&kp KP_NUMBER_0>;
             key-positions = <6 7>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_Miaki_ZNAK {
             bindings = <&kp KP_NUMBER_6>;
             key-positions = <18 27>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         UA_COLEMAK_JE {
             bindings = <&kp KP_NUMBER_3>;
             key-positions = <18 19>;
             timeout-ms = <190>;
-            layers = <2>;
         };
 
         //---------------------------------------------    For OS in QWERTY    ---------------------------------------------
@@ -659,49 +652,49 @@
             bindings = <&kp O>;
             key-positions = <1 2>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 8>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_G_tverde {
             bindings = <&kp GRAVE>;
             key-positions = <3 2>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <6 7>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_Miaki_ZNAK {
             bindings = <&kp M>;
             key-positions = <18 27>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
 
         UA_QWERTY_JE {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 19>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <2>;
         };
     };
 
@@ -720,14 +713,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCMD &mo 7 &kp TAB>,
+                <&kp LCMD &mo 6 &kp TAB>,
                 <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 7 &kp LCMD>;
+                <&mo 6 &kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;  // not used as no taps
@@ -748,7 +741,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 3 &tog_of 27 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 26 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -757,7 +750,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 26 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -766,7 +759,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_on 27 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 2 &tog_on 26 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "UBUNTUMACRO";
         };
 
@@ -780,12 +773,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 25>,
+                <&mo 24>,
                 <&macro_press>,
                 <&kp F16>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 25>,
+                <&mo 24>,
                 <&macro_release>,
                 <&kp F16>;
         };
@@ -860,9 +853,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 15>,
+                <&kt_on RIGHT_ALT &tog_on 14>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 15>;
+                <&kt_off RIGHT_ALT &tog_of 14>;
 
             label = "WWW";
         };
@@ -873,9 +866,9 @@
             tap-ms = <0>;
             wait-ms = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 16>,
+                <&kt_on RIGHT_ALT &tog_on 15>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 16>;
+                <&kt_off RIGHT_ALT &tog_of 15>;
 
             label = "VVVV";
         };
@@ -888,12 +881,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 6>,
+                <&mo 5>,
                 <&macro_press>,
                 <&kp LEFT_CONTROL>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 6>,
+                <&mo 5>,
                 <&macro_release>,
                 <&kp LEFT_CONTROL>;
         };
@@ -906,12 +899,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 6>,
+                <&mo 5>,
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 6>,
+                <&mo 5>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
@@ -922,9 +915,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_ALT &kt LSHFT &kp V &tog_on 7>,
+                <&kt_on LEFT_ALT &kt LSHFT &kp V &tog_on 6>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_ALT &kt_off LSHFT &tog_of 7>;
+                <&kt_off LEFT_ALT &kt_off LSHFT &tog_of 6>;
 
             label = "FLYCUT";
         };
@@ -935,9 +928,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_CONTROL &tog_on 8>,
+                <&kt_on LEFT_CONTROL &tog_on 7>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &tog_of 8>;
+                <&kt_off LEFT_CONTROL &tog_of 7>;
 
             label = "TABS_MACRO";
         };
@@ -1009,10 +1002,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F22 &mo 5>,
+                <&kp F22 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp F22 &mo 5>;
+                <&kp F22 &mo 4>;
         };
 
         Emoji_System_Layouts_macro: Emoji_macro {
@@ -1023,10 +1016,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F23 &mo 5>,
+                <&kp F23 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp F23 &mo 5>;
+                <&kp F23 &mo 4>;
         };
 
         mo_Fx_but_unpress_Hypr_key_pri: mo_Fx_but_unpress_Hypr_key_pri {
@@ -1038,10 +1031,10 @@
             bindings =
                 <&kt_off F16>,
                 <&macro_press>,
-                <&mo 24>,
+                <&mo 23>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 24>;
+                <&mo 23>;
         };
 
         MacOptionShortcutsNonEN_WA_Macr: MacOptionShortcutsNonEN_WA_Macr {
@@ -1071,10 +1064,10 @@
             */
 
             bindings = <
-&kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
-&Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 24                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 2 SPACE
+&kp Q                          &kp W         &Layer_Tap_Timeless_Left 25 F  &P_Tabs_Timeless_left 0 P      &kp G                         &kp J                       &Layer_Tap_Timeless_Right 7 L  &Layer_Tap_Timeless_Right 25 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                   &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
+&Layer_Tap_Timeless_Left 10 Z  &lt 19 X      &lt 20 C                       &lt 18 V                       &Layer_Tap_Timeless_Left 9 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
+                               &tog_on 5     &mo 23                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 6 TAB     &Thumb_HT_Normal 5 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 0 SPACE
             >;
         };
 
@@ -1089,20 +1082,10 @@
             */
 
             bindings = <
-&kp Z                          &kp I                             &Layer_Tap_Timeless_Left 26 A       &P_Tabs_Timeless_left 0 G    &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 26 E  &kp B                        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
-&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET               &lt 21 W                            &lt 19 D                     &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol            &UK_Question_Symbol
-                               &trans                            &trans                              &trans                       &trans                             &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 3 SPACE
-            >;
-        };
-
-        Mac-EN-UA-Colemak-Symbols {
-
-            bindings = <
-&En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                     &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                    &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LALT) LS(P)                 &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                       &kp RIGHT_BRACE    &kp P                                &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &trans            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+&kp Z                          &kp I                             &Layer_Tap_Timeless_Left 25 A       &P_Tabs_Timeless_left 0 G    &kp U                             &kp Q                       &Layer_Tap_Timeless_Right 7 K  &Layer_Tap_Timeless_Right 25 E  &kp B                        &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N    &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
+&Layer_Tap_Timeless_Left 10 P  &lt 19 LEFT_BRACKET               &lt 20 W                            &lt 18 D                     &Layer_Tap_Timeless_Left 9 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol            &UK_Question_Symbol
+                               &trans                            &trans                              &trans                       &trans                            &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 2 SPACE
             >;
         };
 
@@ -1153,14 +1136,14 @@
 &kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
 &kp LS(LEFT_BRACKET)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_PLAY_PAUSE  &kp C_MUTE  &kp KP_DOT   &kp N1        &kp N2        &kp N3  &kp NUMBER_0
-                      &tog_of 6         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &Emoji_System_Layouts_macro
+                      &tog_of 5         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &Emoji_System_Layouts_macro
             >;
         };
 
         NAV-Apple {
             display-name = "Nav-Apple";
             bindings = <
-&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 9     &kp HOME          &kp PAGE_UP    &none     &none     &none
+&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 8     &kp HOME          &kp PAGE_UP    &none     &none     &none
 &trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN  &none     &none     &none
                     &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &Symbols_System_Layouts_Macro
@@ -1227,8 +1210,8 @@
         NAV-Ubuntu {
             display-name = "NAV-Ubuntu";
             bindings = <
-&none   &none   &none             &none             &mo 14  &kp HOME  &kp PAGE_UP    &none     &none     &none
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 22  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&none   &none   &none             &none             &mo 13  &kp HOME  &kp PAGE_UP    &none     &none     &none
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 21  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &none   &none   &none             &none             &none   &kp END   &kp PAGE_DOWN  &none     &none     &none
         &trans  &trans            &trans            &trans  &trans    &trans         &trans    &none     &trans        &trans     &trans
             >;
@@ -1375,7 +1358,7 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 0    &tog 1      &tog 2      &none       &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 26
+&tog 0    &tog 1      &tog 0      &none       &tog 2        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
 &kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
 &trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
           &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
@@ -1393,10 +1376,10 @@
 
         Ubuntu {
             bindings = <
-&kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 13 P  &kp G                   &trans  &trans  &trans               &trans       &trans
+&kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 12 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
-&UbuntuAppSwWA_Timeless 0 Z  &lt 20 X             &lt 21 C             &lt 19 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
-                             &trans               &trans               &trans                         &lt 12 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
+&UbuntuAppSwWA_Timeless 0 Z  &lt 19 X             &lt 20 C             &lt 18 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
+                             &trans               &trans               &trans                         &lt 11 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
             >;
         };
     };
@@ -1405,18 +1388,18 @@
         compatible = "zmk,conditional-layers";
 
         MouseWarpConditional {
-            if-layers = <19>;
-            then-layer = <18>;
+            if-layers = <18>;
+            then-layer = <17>;
         };
 
         MousePrecisionConditional {
-            if-layers = <20>;
-            then-layer = <18>;
+            if-layers = <19>;
+            then-layer = <17>;
         };
 
         MouseRegularConditional {
-            if-layers = <21>;
-            then-layer = <18>;
+            if-layers = <20>;
+            then-layer = <17>;
         };
     };
 };
