@@ -1074,7 +1074,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 6     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 2 SPACE
+                               &tog_on 6     &mo 24                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 2 SPACE
             >;
         };
 
@@ -1097,18 +1097,12 @@
         };
 
         Mac-EN-UA-Colemak-Symbols {
-            /*
-            &hml LEFT_COMMAND LEFT_PARENTHESIS
-                      is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
-                      So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
-                      when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
-            */
 
             bindings = <
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                     &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                    &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LALT) LS(P)                 &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                       &kp RIGHT_BRACE    &kp P                                &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &mo 24            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+                                &trans     &trans         &trans            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
@@ -1117,7 +1111,7 @@
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)                   &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)                   &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LEFT_ALT) LA(LC(COLON))     &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
 &kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)                   &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
-                                &trans     &trans                 &mo 26                        &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
+                                &trans     &trans                 &trans                        &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
             >;
         };
 
@@ -1133,7 +1127,7 @@
 &En_Uk_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                     &kp RIGHT_BRACKET  &EN_greaters_and_trialgles           &En_Ampersan_override_tied_Shift  &trans
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                    &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                       &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &mo 26            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+                                &trans     &trans         &trans            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
