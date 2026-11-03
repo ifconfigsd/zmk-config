@@ -453,7 +453,7 @@
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 1 2 5 2 3 6 7 8 9 10>;
+            layers = <0 1 3 5 3 2 6 7 8 9 10>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
@@ -580,20 +580,20 @@
         AND {
             bindings = <&AND_macro>;
             key-positions = <7 8>;
-            layers = <3 2>;
+            layers = <2 3>;
         };
 
         OR {
             bindings = <&OR_Macro>;
             key-positions = <21 22>;
-            layers = <3 2>;
+            layers = <2 3>;
             timeout-ms = <100>;
         };
 
         PutWordInQuotes {
             bindings = <&PutWordInQuotes_Macro>;
             key-positions = <19 18>;
-            layers = <3 2>;
+            layers = <2 3>;
         };
 
         KeyCluShowShortcutsLeftCombo {
@@ -652,49 +652,49 @@
             bindings = <&kp O>;
             key-positions = <1 2>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 8>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_G_tverde {
             bindings = <&kp GRAVE>;
             key-positions = <3 2>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <6 7>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_Miaki_ZNAK {
             bindings = <&kp M>;
             key-positions = <18 27>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
 
         UA_QWERTY_JE {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 19>;
             timeout-ms = <190>;
-            layers = <2>;
+            layers = <3>;
         };
     };
 
@@ -741,7 +741,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 26 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 3 &tog_of 26 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -1085,16 +1085,7 @@
 &kp Z                          &kp I                             &Layer_Tap_Timeless_Left 25 A       &P_Tabs_Timeless_left 0 G    &kp U                             &kp Q                       &Layer_Tap_Timeless_Right 7 K  &Layer_Tap_Timeless_Right 25 E  &kp B                        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N    &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
 &Layer_Tap_Timeless_Left 10 P  &lt 19 LEFT_BRACKET               &lt 20 W                            &lt 18 D                     &Layer_Tap_Timeless_Left 9 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol            &UK_Question_Symbol
-                               &trans                            &trans                              &trans                       &trans                            &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 2 SPACE
-            >;
-        };
-
-        Apple-UA-QWERTY-Symbols {
-            bindings = <
-&En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)                   &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)                   &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LEFT_ALT) LA(LC(COLON))     &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
-&kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)                   &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
-                                &trans     &trans                 &trans                        &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
+                               &trans                            &trans                              &trans                       &trans                            &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
@@ -1111,6 +1102,15 @@
 &kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                    &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                       &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
                                 &trans     &trans         &trans            &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans             &trans                               &trans                            &trans             &trans          &trans
+            >;
+        };
+
+        Apple-UA-QWERTY-Symbols {
+            bindings = <
+&En_Uk_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)                   &kp LC(LA(RIGHT_BRACKET))      &En_Uk_exclamation_and_warning       &Uk_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)                   &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LEFT_ALT) LA(LC(COLON))     &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
+&kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)                   &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
+                                &trans     &trans                 &trans                        &Symbols_System_Layouts_Macro       &Emoji_System_Layouts_macro  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
             >;
         };
 
@@ -1358,7 +1358,7 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 0    &tog 1      &tog 0      &none       &tog 2        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
+&tog 0    &tog 1      &tog 0      &none       &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
 &kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
 &trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
           &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
