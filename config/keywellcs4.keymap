@@ -494,7 +494,7 @@
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <25>;
+            layers = <24>;
         };
 
         iPad_SwitchToEN {
@@ -741,7 +741,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 3 &tog_of 26 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 3 &tog_of 25 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -750,7 +750,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 26 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 25 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -759,7 +759,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_on 26 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 2 &tog_on 25 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "UBUNTUMACRO";
         };
 
@@ -773,12 +773,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 24>,
+                <&mo 26>,
                 <&macro_press>,
                 <&kp F16>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 24>,
+                <&mo 26>,
                 <&macro_release>,
                 <&kp F16>;
         };
@@ -822,6 +822,7 @@
                 For rdp/vnc/remote Karabiner doesn't work. To switch system layouts remotely bypass karabiner.
                 For example by using Apple Script added as a service with shortcut.
     		*/
+
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
@@ -1091,10 +1092,10 @@
             */
 
             bindings = <
-&kp Q                          &kp W         &Layer_Tap_Timeless_Left 25 F  &P_Tabs_Timeless_left 0 P      &kp G                         &kp J                       &Layer_Tap_Timeless_Right 7 L  &Layer_Tap_Timeless_Right 25 U  &kp Y        &kp LEFT_SHIFT
+&kp Q                          &kp W         &Layer_Tap_Timeless_Left 24 F  &P_Tabs_Timeless_left 0 P      &kp G                         &kp J                       &Layer_Tap_Timeless_Right 7 L  &Layer_Tap_Timeless_Right 24 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                   &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 10 Z  &lt 19 X      &lt 20 C                       &lt 18 V                       &Layer_Tap_Timeless_Left 9 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 5     &mo 23                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 6 TAB     &Thumb_HT_Normal 5 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 0 SPACE
+                               &tog_on 5     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 6 TAB     &Thumb_HT_Normal 5 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 0 SPACE
             >;
         };
 
@@ -1109,7 +1110,7 @@
             */
 
             bindings = <
-&kp Z                          &kp I                             &Layer_Tap_Timeless_Left 25 A       &P_Tabs_Timeless_left 0 G    &kp U                             &kp Q                       &Layer_Tap_Timeless_Right 7 K  &Layer_Tap_Timeless_Right 25 E  &kp B                        &kp LEFT_SHIFT
+&kp Z                          &kp I                             &Layer_Tap_Timeless_Left 24 A       &P_Tabs_Timeless_left 0 G    &kp U                             &kp Q                       &Layer_Tap_Timeless_Right 7 K  &Layer_Tap_Timeless_Right 24 E  &kp B                        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N    &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
 &Layer_Tap_Timeless_Left 10 P  &lt 19 LEFT_BRACKET               &lt 20 W                            &lt 18 D                     &Layer_Tap_Timeless_Left 9 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol            &UK_Question_Symbol
                                &trans                            &trans                              &trans                       &trans                            &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 3 SPACE
@@ -1382,16 +1383,6 @@
             >;
         };
 
-        Adjust {
-            display-name = "BT, workarounds";
-            bindings = <
-&tog 0    &tog 1      &tog 0      &none       &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
-&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
-&trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
-          &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
-            >;
-        };
-
         Apps {
             bindings = <
 &App_Q_TD  &App_W_TD  &App_F_TD  &App_P_TD  &App_G_TD  &App_J_TD  &App_L_TD  &App_U_TD  &App_Y_TD  &none
@@ -1407,6 +1398,16 @@
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &UbuntuAppSwWA_Timeless 0 Z  &lt 19 X             &lt 20 C             &lt 18 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
                              &trans               &trans               &trans                         &lt 11 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
+            >;
+        };
+
+        Adjust {
+            display-name = "BT, workarounds";
+            bindings = <
+&tog 0    &tog 1      &tog 0      &none       &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
+&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
+&trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
+          &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
             >;
         };
     };
