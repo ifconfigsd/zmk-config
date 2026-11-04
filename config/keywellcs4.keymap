@@ -1078,6 +1078,15 @@
                 <&macro_pause_for_release>,
                 <&kt_off LEFT_ALT &tog_of 0 &tog_on 1>;
         };
+
+        Iphone_BT_Macro: Iphone_BT_Macro {
+            compatible = "zmk,behavior-macro";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &tog_on 0 &tog_of 1 &tog_of 25 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
+            label = "IPHONE_BT_MACRO";
+        };
     };
 
     keymap {
@@ -1406,10 +1415,10 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 0    &tog 1      &tog 0      &none       &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
-&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
-&trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
-          &sys_reset  &none       &none       &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
+&tog 0    &tog 1      &tog 0      &Iphone_BT_Macro  &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
+&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT        &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
+&trans    &trans      &none       &kp INSERT        &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
+          &sys_reset  &none       &none             &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
             >;
         };
     };
