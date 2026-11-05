@@ -937,16 +937,16 @@
                 <&kt_off LCMD &kp LS(F21) &tog_of 0 &tog_on 1>;
         };
 
-        iPad_ControlNonEN_WA_Macro: iPad_ControlNonEN_WA_Macro {
+        iPad_OptionNonEN_WA_Macro: iPad_OptionNonEN_WA_Macro {
             compatible = "zmk,behavior-macro";
-            label = "IPAD_controlNONEN_WA_MACRO";
+            label = "IPAD_OPTIONNONEN_WA_MACRO";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 1 &kt_on LEFT_CONTROL>,
+                <&tog_of 1 &kt_on LEFT_OPTION>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &tog_of 0 &tog_on 1>;
+                <&kt_off LEFT_OPTION &tog_of 0 &tog_on 1>;
         };
 
         iPad_Opt_ShortcutsNonEN_WA_Macr: iPad_Opt_ShortcutsNonEN_WA_Macr {
