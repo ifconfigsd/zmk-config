@@ -829,7 +829,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp LS(F21) &tog_on 1>;
+            bindings = <&kp LS(CAPS) &tog_on 1>;
             label = "MACKARABINERUK";
         };
 
@@ -840,7 +840,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F21 &tog_of 1>;
+            bindings = <&kp CAPSLOCK &tog_of 1>;
             label = "MACKARABINEREN";
         };
 
