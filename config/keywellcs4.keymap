@@ -549,11 +549,20 @@
             };
         };
 
-        Test_UA_7: Test_UA_7 {
+        Test_Mac_UA_Nonfits: Test_Mac_UA_Nonfits {
             compatible = "zmk,behavior-tap-dance";
-            label = "TEST_UA_7";
+            label = "TEST_MAC_UA_NONFITS";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&sl 17>;
+
+            tapping-term-ms = <350>;
+        };
+
+        Test_iPad_UA_Nonfits: Test_iPad_UA_Nonfits {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TEST_IPAD_UA_NONFITS";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&sl 28>;
 
             tapping-term-ms = <350>;
         };
@@ -1306,7 +1315,7 @@
             bindings = <
 &kp Z                          &kp I                           &Layer_Tap_Timeless_Left 25 A     &P_Tabs_Timeless_left 0 G        &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 25 E  &kp B                            &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &Mac_Globe_non_en_fix_LHRM 0 F  &Mac_Control_non_en_fix_LHRM 0 H  &Mac_Option_non_en_fix_LHRM 0 C  &Mac_CMD_non_en_fix_LHRM 0 N       &D_Tasks_Timeless_left 0 L  &kp X                          &Mac_CMD_non_en_fix_RHRM 0 Y    &Mac_Option_non_en_fix_RHRM 0 T  &Mac_Control_non_en_fix_RHRM 0 S  &Mac_Globe_non_en_fix_RHRM 0 J
-&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET             &lt 21 W                          &lt 19 D                         &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol                &UK_Question_Symbol
+&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET             &lt 21 W                          &lt 19 D                         &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_Mac_UA_Nonfits            &UK_Period_Symbol                &UK_Question_Symbol
                                &trans                          &trans                            &trans                           &trans                             &trans                      &trans                         &trans                          &trans                           &trans                            &trans                          &Thumb_HT_VeryShort 4 SPACE
             >;
         };
@@ -1315,7 +1324,7 @@
             bindings = <
 &kp Z                          &kp I                            &Layer_Tap_Timeless_Left 25 A      &P_Tabs_Timeless_left 0 G         &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 25 E  &kp B                             &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &iPad_Globe_non_en_fix_LHRM 0 F  &iPad_Control_non_en_fix_LHRM 0 H  &iPad_Option_non_en_fix_LHRM 0 C  &iPad_CMD_non_en_fix_LHRM 0 N      &D_Tasks_Timeless_left 0 L  &kp X                          &iPad_CMD_non_en_fix_RHRM 0 Y   &iPad_Option_non_en_fix_RHRM 0 T  &iPad_Control_non_en_fix_RHRM 0 S  &iPad_Globe_non_en_fix_RHRM 0 J
-&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET              &lt 21 W                           &lt 19 D                          &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol                 &UK_Question_Symbol
+&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET              &lt 21 W                           &lt 19 D                          &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_iPad_UA_Nonfits           &UK_Period_Symbol                 &UK_Question_Symbol
                                &trans                           &trans                             &trans                            &trans                             &trans                      &trans                         &trans                          &trans                            &trans                             &trans                           &Thumb_HT_VeryShort 4 SPACE
             >;
         };
@@ -1487,7 +1496,7 @@
             >;
         };
 
-        Test-UA-Colemak-non-fits {
+        Test-UA-Mac-non-fits {
             bindings = <
 &none      &kp KP_NUMBER_1  &none   &none   &kp KP_NUMBER_2  &kp KP_NUMBER_0  &none   &kp KP_NUMBER_4  &none            &kp LSHFT
 &kp LSHFT  &none            &none   &none   &none            &none            &none   &none            &kp KP_NUMBER_3  &kp KP_NUMBER_5  &none
@@ -1611,6 +1620,15 @@
 &kp CAPS  &none       &bt BT_PRV  &bt BT_NXT        &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
 &trans    &trans      &none       &kp INSERT        &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
           &sys_reset  &none       &none             &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
+            >;
+        };
+
+        Test_iPad_non_fits {
+            bindings = <
+&none      &kp KP_NUMBER_1  &none   &none   &kp KP_NUMBER_2  &kp KP_NUMBER_0  &none   &kp KP_NUMBER_4  &none            &kp LSHFT
+&kp LSHFT  &none            &none   &none   &none            &none            &none   &none            &kp KP_NUMBER_3  &kp KP_NUMBER_5  &none
+&none      &none            &none   &none   &kp KP_NUMBER_6  &none            &none   &none            &none            &none
+           &trans           &trans  &trans  &trans           &trans           &trans  &trans           &trans           &trans           &trans  &trans
             >;
         };
     };
