@@ -461,25 +461,25 @@
             key-positions = <24 23>;
         };
 
-        Mac_SwitchToUA {
+        Apple_SwitchToUA_combo {
             /*
                 Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&MacKarabinerUK_Macro>;
+            bindings = <&Apple_SwitchToUA_Macro>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        Mac_SwitchToEN {
+        Apple_SwitchToEN_combo {
             /*
                 Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&MacKarabinerEN_Macro>;
+            bindings = <&Apple_SwitchToEN_Macro>;
             key-positions = <27 28>;
             layers = <1>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
@@ -495,24 +495,6 @@
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <1>;
-        };
-
-        iPad_SwitchToEN {
-            // Read in Mac counterpat combo
-
-            bindings = <&iPadEN_Macro>;
-            key-positions = <27 28>;
-            timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <26>;
-        };
-
-        iPad_SwitchToUK {
-            // Read in Mac counterpat combo
-
-            bindings = <&iPad_UA_Macro>;
-            key-positions = <28 29>;
-            timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <26>;
         };
 
         iPadENSupresWhenAlready {
@@ -816,7 +798,7 @@
                 <&kt_off LEFT_CONTROL &tog_of 0 &tog_on 1>;
         };
 
-        MacKarabinerUK_Macro: MacKarabinerUK {
+        Apple_SwitchToUA_Macro: MacKarabinerUK {
             /*
                 Macro is mandatory. As keyboard must switch zmk layout too (in addition to sending language changing key
                 sequence to karabener which is not possible wo macro)
@@ -833,7 +815,7 @@
             label = "MACKARABINERUK";
         };
 
-        MacKarabinerEN_Macro: MacKarabinerEN {
+        Apple_SwitchToEN_Macro: MacKarabinerEN {
             // read ^16499de1
 
             compatible = "zmk,behavior-macro";
@@ -842,24 +824,6 @@
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_of 1>;
             label = "MACKARABINEREN";
-        };
-
-        iPad_UA_Macro: iPadUK_Macro {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_on 1>;
-            label = "IPADUKMACRO";
-        };
-
-        iPadEN_Macro: iPadEN_Macro {
-            tap-ms = <0>;
-            wait-ms = <0>;
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_of 1>;
-            label = "IPADENMACRO";
         };
 
         GlobeNonEN_WA_Macro: GlobeNonEN_WA_Macro {
