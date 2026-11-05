@@ -1041,6 +1041,25 @@
             label = "MACKARABINEREN";
         };
 
+        iPad_UA_Macro: iPadUK_Macro {
+            compatible = "zmk,behavior-macro";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 5>;
+            label = "IPADUKMACRO";
+        };
+
+        iPadEN_Macro: iPadEN_Macro {
+            tap-ms = <0>;
+            wait-ms = <0>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 5>;
+            label = "IPADENMACRO";
+        };
+
+
         UbuntuWindowsSwWA_Macro: www {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
