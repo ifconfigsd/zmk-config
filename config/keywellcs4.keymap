@@ -164,10 +164,10 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        MacOS_CMD_non_en_fix_LHRM: MacOS_CMD_non_en_fix_LHRM {
+        Mac_CMD_non_en_fix_LHRM: Mac_CMD_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CMD_NON_EN_FIX_LHRM";
-            bindings = <&CmdNonEN_WA_Macro>, <&kp>;
+            label = "MAC_CMD_NON_EN_FIX_LHRM";
+            bindings = <&Mac_CmdNonEN_WA_Macro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -178,10 +178,10 @@
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
         };
 
-        MacOS_CMD_non_en_fix_RHRM: MacOS_CMD_non_en_fix_RHRM {
+        Mac_CMD_non_en_fix_RHRM: Mac_CMD_non_en_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CMD_NON_EN_FIX_RHRM";
-            bindings = <&CmdNonEN_WA_Macro>, <&kp>;
+            label = "MAC_CMD_NON_EN_FIX_RHRM";
+            bindings = <&Mac_CmdNonEN_WA_Macro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -192,9 +192,9 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 31 32 33 34 35 36 37 38 39 40 41 30 25 15 20>;
         };
 
-        MacOS_Control_non_en_fix_LHRM: MacOS_Control_non_en_fix_LHRM {
+        Mac_Control_non_en_fix_LHRM: Mac_Control_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CONTROL_NON_EN_FIX_LHRM";
+            label = "MAC_CONTROL_NON_EN_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
@@ -202,26 +202,26 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
-            bindings = <&ControlNonEN_WA_Macro>, <&kp>;
+            bindings = <&Mac_ControlNonEN_WA_Macro>, <&kp>;
         };
 
-        MacOS_Control_non_en_fix_RHRM: MacOS_Control_non_en_fix_RHRM {
+        Mac_Control_non_en_fix_RHRM: Mac_Control_non_en_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CONTROL_NON_EN_FIX_RHRM";
+            label = "MAC_CONTROL_NON_EN_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&ControlNonEN_WA_Macro>, <&kp>;
+            bindings = <&Mac_ControlNonEN_WA_Macro>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        MacOS_Globe_non_en_fix_LHRM: MacOS_Globe_non_en_fix_LHRM {
+        Mac_Globe_non_en_fix_LHRM: Mac_Globe_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_GLOBE_NON_EN_FIX_LHRM";
+            label = "MAC_GLOBE_NON_EN_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
@@ -229,19 +229,19 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
-            bindings = <&GlobeNonEN_WA_Macro>, <&kp>;
+            bindings = <&Mac_GlobeNonEN_WA_Macro>, <&kp>;
         };
 
-        MacOS_Globe_non_en_fix_RHRM: MacOS_Globe_non_en_fix_RHRM {
+        Mac_Globe_non_en_fix_RHRM: Mac_Globe_non_en_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_GLOBE_NON_EN_FIX_RHRM";
+            label = "MAC_GLOBE_NON_EN_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&GlobeNonEN_WA_Macro>, <&kp>;
+            bindings = <&Mac_GlobeNonEN_WA_Macro>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
@@ -404,15 +404,15 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_UA_7";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sl 16>;
+            bindings = <&kp COMMA>, <&sl 17>;
 
             tapping-term-ms = <350>;
         };
 
-        Option_non_en_fix_LHRM: Option_non_en_fix_LHRM {
+        Mac_Option_non_en_fix_LHRM: Mac_Option_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "OPTION_NON_EN_FIX_LHRM";
-            bindings = <&MacOptionShortcutsNonEN_WA_Macr>, <&kp>;
+            label = "MAC_OPTION_NON_EN_FIX_LHRM";
+            bindings = <&Mac_Opt_ShortcutsNonEN_WA_Macr>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -423,10 +423,120 @@
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
         };
 
-        Option_non_en_fix_RHRM: Option_non_en_fix_RHRM {
+        Mac_Option_non_en_fix_RHRM: Mac_Option_non_en_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "OPTION_NON_EN_FIX_RHRM";
-            bindings = <&MacOptionShortcutsNonEN_WA_Macr>, <&kp>;
+            label = "MAC_OPTION_NON_EN_FIX_RHRM";
+            bindings = <&Mac_Opt_ShortcutsNonEN_WA_Macr>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 31 32 33 34 35 36 37 38 39 40 41 30 25 15 20>;
+        };
+
+        iPad_CMD_non_en_fix_LHRM: iPad_CMD_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_CMD_NON_EN_FIX_LHRM";
+            bindings = <&iPad_CmdNonEN_WA_Macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+        };
+
+        iPad_CMD_non_en_fix_RHRM: iPad_CMD_non_en_fix_RHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_CMD_NON_EN_FIX_RHRM";
+            bindings = <&iPad_CmdNonEN_WA_Macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 31 32 33 34 35 36 37 38 39 40 41 30 25 15 20>;
+        };
+
+        iPad_Control_non_en_fix_LHRM: iPad_Control_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_CONTROL_NON_EN_FIX_LHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+            bindings = <&iPad_ControlNonEN_WA_Macro>, <&kp>;
+        };
+
+        iPad_Control_non_en_fix_RHRM: iPad_Control_non_en_fix_RHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_CONTROL_NON_EN_FIX_RHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&iPad_ControlNonEN_WA_Macro>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+
+        iPad_Globe_non_en_fix_LHRM: iPad_Globe_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_GLOBE_NON_EN_FIX_LHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+            bindings = <&iPad_GlobeNonEN_WA_Macro>, <&kp>;
+        };
+
+        iPad_Globe_non_en_fix_RHRM: iPad_Globe_non_en_fix_RHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_GLOBE_NON_EN_FIX_RHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&iPad_GlobeNonEN_WA_Macro>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+
+        iPad_Option_non_en_fix_LHRM: iPad_Option_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_OPTION_NON_EN_FIX_LHRM";
+            bindings = <&iPad_Opt_ShortcutsNonEN_WA_Macr>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+        };
+
+        iPad_Option_non_en_fix_RHRM: iPad_Option_non_en_fix_RHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IPAD_OPTION_NON_EN_FIX_RHRM";
+            bindings = <&iPad_Opt_ShortcutsNonEN_WA_Macr>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -453,7 +563,7 @@
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 1 3 5 3 2 6 7 8 9 10>;
+            layers = <0 1 4 6 4 3 7 8 9 10 11>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
@@ -555,29 +665,29 @@
         };
 
         MediaLayerStickLikeWP {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <1 3>;
             timeout-ms = <150>;
-            layers = <5>;
+            layers = <6>;
         };
 
         AND {
             bindings = <&AND_macro>;
             key-positions = <7 8>;
-            layers = <2 3>;
+            layers = <3 4>;
         };
 
         OR {
             bindings = <&OR_Macro>;
             key-positions = <21 22>;
-            layers = <2 3>;
+            layers = <3 4>;
             timeout-ms = <100>;
         };
 
         PutWordInQuotes {
             bindings = <&PutWordInQuotes_Macro>;
             key-positions = <19 18>;
-            layers = <2 3>;
+            layers = <3 4>;
         };
 
         KeyCluShowShortcutsLeftCombo {
@@ -636,49 +746,49 @@
             bindings = <&kp O>;
             key-positions = <1 2>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 8>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_G_tverde {
             bindings = <&kp GRAVE>;
             key-positions = <3 2>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <6 7>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_Miaki_ZNAK {
             bindings = <&kp M>;
             key-positions = <18 27>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
 
         UA_QWERTY_JE {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 19>;
             timeout-ms = <190>;
-            layers = <3>;
+            layers = <4>;
         };
     };
 
@@ -697,14 +807,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCMD &mo 6 &kp TAB>,
+                <&kp LCMD &mo 7 &kp TAB>,
                 <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 6 &kp LCMD>;
+                <&mo 7 &kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;  // not used as no taps
@@ -725,7 +835,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 3 &tog_of 25 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 4 &tog_of 26 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -734,7 +844,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 25 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 26 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -743,7 +853,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_on 25 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 2 &tog_on 26 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "UBUNTUMACRO";
         };
 
@@ -757,17 +867,17 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 22>,
+                <&mo 23>,
                 <&macro_press>,
                 <&kp F16>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 22>,
+                <&mo 23>,
                 <&macro_release>,
                 <&kp F16>;
         };
 
-        CmdNonEN_WA_Macro: CmdNonEN_WA_Macro {
+        Mac_CmdNonEN_WA_Macro: CmdNonEN_WA_Macro {
             /*
                 f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer -
                 make it separete shortcut (like ol' LE / LU) ^16499de1
@@ -784,7 +894,7 @@
                 <&kt_off LCMD &tog_of 0 &tog_on 1>;
         };
 
-        ControlNonEN_WA_Macro: ControlNonEN_WA_Macro {
+        Mac_ControlNonEN_WA_Macro: ControlNonEN_WA_Macro {
             // read ^16499de1
 
             compatible = "zmk,behavior-macro";
@@ -826,7 +936,7 @@
             label = "MACKARABINEREN";
         };
 
-        GlobeNonEN_WA_Macro: GlobeNonEN_WA_Macro {
+        Mac_GlobeNonEN_WA_Macro: Mac_GlobeNonEN_WA_Macro {
             // read ^16499de1
 
             compatible = "zmk,behavior-macro";
@@ -838,7 +948,7 @@
                 <&macro_pause_for_release>,
                 <&kt_off GLOBE &tog_of 0 &tog_on 1>;
 
-            label = "GLOBENONEN_WA_MACRO";
+            label = "MAC_GLOBENONEN_WA_MACRO";
         };
 
         UbuntuWindowsSwWA_Macro: www {
@@ -847,9 +957,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 14>,
+                <&kt_on RIGHT_ALT &tog_on 15>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 14>;
+                <&kt_off RIGHT_ALT &tog_of 15>;
 
             label = "WWW";
         };
@@ -860,9 +970,9 @@
             tap-ms = <0>;
             wait-ms = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 15>,
+                <&kt_on RIGHT_ALT &tog_on 16>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 15>;
+                <&kt_off RIGHT_ALT &tog_of 16>;
 
             label = "VVVV";
         };
@@ -875,12 +985,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 5>,
+                <&mo 6>,
                 <&macro_press>,
                 <&kp LEFT_CONTROL>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 5>,
+                <&mo 6>,
                 <&macro_release>,
                 <&kp LEFT_CONTROL>;
         };
@@ -893,12 +1003,12 @@
             wait-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 5>,
+                <&mo 6>,
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 5>,
+                <&mo 6>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
         };
@@ -909,9 +1019,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_ALT &kt LSHFT &kp V &tog_on 6>,
+                <&kt_on LEFT_ALT &kt LSHFT &kp V &tog_on 7>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_ALT &kt_off LSHFT &tog_of 6>;
+                <&kt_off LEFT_ALT &kt_off LSHFT &tog_of 7>;
 
             label = "FLYCUT";
         };
@@ -922,9 +1032,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_CONTROL &tog_on 7>,
+                <&kt_on LEFT_CONTROL &tog_on 8>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &tog_of 7>;
+                <&kt_off LEFT_CONTROL &tog_of 8>;
 
             label = "TABS_MACRO";
         };
@@ -996,10 +1106,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F22 &mo 4>,
+                <&kp F22 &mo 5>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp F22 &mo 4>;
+                <&kp F22 &mo 5>;
         };
 
         Emoji_System_Layouts_macro: Emoji_macro {
@@ -1010,10 +1120,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp F23 &mo 4>,
+                <&kp F23 &mo 5>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp F23 &mo 4>;
+                <&kp F23 &mo 5>;
         };
 
         mo_Fx_but_unpress_Hypr_key_pri: mo_Fx_but_unpress_Hypr_key_pri {
@@ -1025,13 +1135,13 @@
             bindings =
                 <&kt_off F16>,
                 <&macro_press>,
-                <&mo 23>,
+                <&mo 24>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 23>;
+                <&mo 24>;
         };
 
-        MacOptionShortcutsNonEN_WA_Macr: MacOptionShortcutsNonEN_WA_Macr {
+        Mac_Opt_ShortcutsNonEN_WA_Macr: MacOptionShortcutsNonEN_WA_Macr {
             compatible = "zmk,behavior-macro";
             label = "MACOPTIONSHORTCUTSNONEN_WA_MACR";
             tap-ms = <0>;
@@ -1048,8 +1158,57 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &tog_on 0 &tog_of 1 &tog_of 25 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 3 &tog_on 0 &tog_of 1 &tog_of 26 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>;
             label = "IPHONE_BT_MACRO";
+        };
+
+        iPad_CmdNonEN_WA_Macro: iPad_CmdNonEN_WA_Macro {
+            compatible = "zmk,behavior-macro";
+            label = "IPAD_CMDNONEN_WA_MACRO";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 0 &tog_of 1 &kt_on LCMD>,
+                <&macro_pause_for_release>,
+                <&kt_off LCMD &tog_of 0 &tog_on 1>;
+        };
+
+        iPad_ControlNonEN_WA_Macro: iPad_ControlNonEN_WA_Macro {
+            compatible = "zmk,behavior-macro";
+            label = "IPAD_CONTROLNONEN_WA_MACRO";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 0 &tog_of 1 &kt_on LEFT_CONTROL>,
+                <&macro_pause_for_release>,
+                <&kt_off LEFT_CONTROL &tog_of 0 &tog_on 1>;
+        };
+
+        iPad_GlobeNonEN_WA_Macro: iPad_GlobeNonEN_WA_Macro {
+            compatible = "zmk,behavior-macro";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 0 &tog_of 1 &kt_on GLOBE>,
+                <&macro_pause_for_release>,
+                <&kt_off GLOBE &tog_of 0 &tog_on 1>;
+
+            label = "IPAD_GLOBENONEN_WA_MACRO";
+        };
+
+        iPad_Opt_ShortcutsNonEN_WA_Macr: iPad_Opt_ShortcutsNonEN_WA_Macr {
+            compatible = "zmk,behavior-macro";
+            label = "IPAD_OPT_SHORTCUTSNONEN_WA_MACR";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 0 &tog_of 1 &kt_on LEFT_ALT>,
+                <&macro_pause_for_release>,
+                <&kt_off LEFT_ALT &tog_of 0 &tog_on 1>;
         };
     };
 
@@ -1067,14 +1226,14 @@
             */
 
             bindings = <
-&kp Q                          &kp W         &Layer_Tap_Timeless_Left 24 F  &P_Tabs_Timeless_left 0 P      &kp G                         &kp J                       &Layer_Tap_Timeless_Right 7 L  &Layer_Tap_Timeless_Right 24 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                   &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
-&Layer_Tap_Timeless_Left 10 Z  &lt 19 X      &lt 20 C                       &lt 18 V                       &Layer_Tap_Timeless_Left 9 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 5     &mo 26                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 6 TAB     &Thumb_HT_Normal 5 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 2 SPACE
+&kp Q                          &kp W         &Layer_Tap_Timeless_Left 25 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 8 L  &Layer_Tap_Timeless_Right 25 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
+&Layer_Tap_Timeless_Left 11 Z  &lt 20 X      &lt 21 C                       &lt 19 V                       &Layer_Tap_Timeless_Left 10 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
+                               &tog_on 6     &mo 27                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 7 TAB      &Thumb_HT_Normal 6 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 3 SPACE
             >;
         };
 
-        Apple-UA-QWERTY {
+        Mac-UA-QWERTY {
             /*
                 Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
                 This allows to type on devices where Colemak is not supported.
@@ -1085,10 +1244,19 @@
             */
 
             bindings = <
-&kp Z                          &kp I                             &Layer_Tap_Timeless_Left 24 A       &P_Tabs_Timeless_left 0 G    &kp U                             &kp Q                       &Layer_Tap_Timeless_Right 7 K  &Layer_Tap_Timeless_Right 24 E  &kp B                        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N    &D_Tasks_Timeless_left 0 L  &kp X                          &MacOS_CMD_non_en_fix_RHRM 0 Y  &Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
-&Layer_Tap_Timeless_Left 10 P  &lt 19 LEFT_BRACKET               &lt 20 W                            &lt 18 D                     &Layer_Tap_Timeless_Left 9 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol            &UK_Question_Symbol
-                               &trans                            &trans                              &trans                       &trans                            &trans                      &trans                         &trans                          &trans                       &trans                              &trans                            &Thumb_HT_VeryShort 3 SPACE
+&kp Z                          &kp I                           &Layer_Tap_Timeless_Left 25 A     &P_Tabs_Timeless_left 0 G        &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 25 E  &kp B                            &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &Mac_Globe_non_en_fix_LHRM 0 F  &Mac_Control_non_en_fix_LHRM 0 H  &Mac_Option_non_en_fix_LHRM 0 C  &Mac_CMD_non_en_fix_LHRM 0 N       &D_Tasks_Timeless_left 0 L  &kp X                          &Mac_CMD_non_en_fix_RHRM 0 Y    &Mac_Option_non_en_fix_RHRM 0 T  &Mac_Control_non_en_fix_RHRM 0 S  &Mac_Globe_non_en_fix_RHRM 0 J
+&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET             &lt 21 W                          &lt 19 D                         &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol                &UK_Question_Symbol
+                               &trans                          &trans                            &trans                           &trans                             &trans                      &trans                         &trans                          &trans                           &trans                            &trans                          &Thumb_HT_VeryShort 4 SPACE
+            >;
+        };
+
+        iPad-UA-QWERTY {
+            bindings = <
+&kp Z                          &kp I                            &Layer_Tap_Timeless_Left 25 A      &P_Tabs_Timeless_left 0 G         &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 8 K  &Layer_Tap_Timeless_Right 25 E  &kp B                             &kp LEFT_SHIFT
+&kp LEFT_SHIFT                 &iPad_Globe_non_en_fix_LHRM 0 F  &iPad_Control_non_en_fix_LHRM 0 H  &iPad_Option_non_en_fix_LHRM 0 C  &iPad_CMD_non_en_fix_LHRM 0 N      &D_Tasks_Timeless_left 0 L  &kp X                          &iPad_CMD_non_en_fix_RHRM 0 Y   &iPad_Option_non_en_fix_RHRM 0 T  &iPad_Control_non_en_fix_RHRM 0 S  &iPad_Globe_non_en_fix_RHRM 0 J
+&Layer_Tap_Timeless_Left 11 P  &lt 20 LEFT_BRACKET              &lt 21 W                           &lt 19 D                          &Layer_Tap_Timeless_Left 10 COMMA  &kp R                       &kp V                          &Test_UA_7                      &UK_Period_Symbol                 &UK_Question_Symbol
+                               &trans                           &trans                             &trans                            &trans                             &trans                      &trans                         &trans                          &trans                            &trans                             &trans                           &Thumb_HT_VeryShort 4 SPACE
             >;
         };
 
@@ -1139,14 +1307,14 @@
 &kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
 &kp LS(LEFT_BRACKET)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_PLAY_PAUSE  &kp C_MUTE  &kp KP_DOT   &kp N1        &kp N2        &kp N3  &kp NUMBER_0
-                      &tog_of 5         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &Emoji_System_Layouts_macro
+                      &tog_of 6         &none              &trans            &trans      &none        &none         &none         &none   &trans           &trans         &Emoji_System_Layouts_macro
             >;
         };
 
         NAV-Apple {
             display-name = "Nav-Apple";
             bindings = <
-&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 8     &kp HOME          &kp PAGE_UP    &none     &none     &none
+&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 9     &kp HOME          &kp PAGE_UP    &none     &none     &none
 &trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN  &none     &none     &none
                     &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &Symbols_System_Layouts_Macro
@@ -1213,8 +1381,8 @@
         NAV-Ubuntu {
             display-name = "NAV-Ubuntu";
             bindings = <
-&none   &none   &none             &none             &mo 13  &kp HOME  &kp PAGE_UP    &none     &none     &none
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 21  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&none   &none   &none             &none             &mo 14  &kp HOME  &kp PAGE_UP    &none     &none     &none
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 22  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &none   &none   &none             &none             &none   &kp END   &kp PAGE_DOWN  &none     &none     &none
         &trans  &trans            &trans            &trans  &trans    &trans         &trans    &none     &trans        &trans     &trans
             >;
@@ -1369,17 +1537,17 @@
 
         Ubuntu {
             bindings = <
-&kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 12 P  &kp G                   &trans  &trans  &trans               &trans       &trans
+&kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 13 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
-&UbuntuAppSwWA_Timeless 0 Z  &lt 19 X             &lt 20 C             &lt 18 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
-                             &trans               &trans               &trans                         &lt 11 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
+&UbuntuAppSwWA_Timeless 0 Z  &lt 20 X             &lt 21 C             &lt 19 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
+                             &trans               &trans               &trans                         &lt 12 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
             >;
         };
 
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 0    &tog 1      &tog 0      &Iphone_BT_Macro  &tog 3        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 24
+&tog 0    &tog 1      &tog 0      &Iphone_BT_Macro  &tog 4        &none         &trans         &Ubuntu_BT_Macro  &none    &tog 25
 &kp CAPS  &none       &bt BT_PRV  &bt BT_NXT        &bt BT_SEL 2  &bt BT_SEL 3  &trans         &trans            &trans   &iPad_BT_Macro  &none
 &trans    &trans      &none       &kp INSERT        &out OUT_BLE  &none         &Mac_BT_Macro  &trans            &none    &none
           &sys_reset  &none       &none             &none         &none         &none          &sys_reset        &kt F15  &bt BT_CLR      &none  &none
@@ -1391,18 +1559,18 @@
         compatible = "zmk,conditional-layers";
 
         MouseWarpConditional {
-            if-layers = <18>;
-            then-layer = <17>;
+            if-layers = <19>;
+            then-layer = <18>;
         };
 
         MousePrecisionConditional {
-            if-layers = <19>;
-            then-layer = <17>;
+            if-layers = <20>;
+            then-layer = <18>;
         };
 
         MouseRegularConditional {
-            if-layers = <20>;
-            then-layer = <17>;
+            if-layers = <21>;
+            then-layer = <18>;
         };
     };
 };
