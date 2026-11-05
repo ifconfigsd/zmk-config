@@ -825,14 +825,14 @@
     macros {
         #include "includes/open_app_shortcuts_macros.dtsi"
 
-        Mac_CmdNonEN_WA_Macro: CmdNonEN_WA_Macro {
+        Mac_CmdNonEN_WA_Macro: Mac_CmdNonEN_WA_Macro {
             /*
                 f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer -
                 make it separete shortcut (like ol' LE / LU) ^16499de1
             */
 
             compatible = "zmk,behavior-macro";
-            label = "CMDNONEN_WA_MACRO";
+            label = "Mac_CmdNonEN_WA_Macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
@@ -937,16 +937,16 @@
                 <&kt_off LCMD &kp LS(F21) &tog_of 0 &tog_on 1>;
         };
 
-        iPad_CmdNonEN_WA_Macro: iPad_CmdNonEN_WA_Macro {
+        iPad_ControlNonEN_WA_Macro: iPad_ControlNonEN_WA_Macro {
             compatible = "zmk,behavior-macro";
-            label = "IPAD_CMDNONEN_WA_MACRO";
+            label = "IPAD_controlNONEN_WA_MACRO";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 1 &kt_on LCMD>,
+                <&tog_of 1 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&kt_off LCMD &tog_of 0 &tog_on 1>;
+                <&kt_off LEFT_CONTROL &tog_of 0 &tog_on 1>;
         };
 
         iPad_Opt_ShortcutsNonEN_WA_Macr: iPad_Opt_ShortcutsNonEN_WA_Macr {
