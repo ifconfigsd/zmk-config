@@ -749,7 +749,7 @@
 
         //-------------------------------------------    For OS in UA-Colemak    -------------------------------------------
 
-        UA_COLEMAK_SC {
+ /*       UA_COLEMAK_SC {
             bindings = <&kp KP_NUMBER_1>;
             key-positions = <1 2>;
             timeout-ms = <190>;
@@ -840,7 +840,7 @@
             key-positions = <18 19>;
             timeout-ms = <190>;
             layers = <4>;
-        };
+        };*/
     };
 
     macros {
@@ -1625,9 +1625,9 @@
 
         Test_iPad_non_fits {
             bindings = <
-&none      &kp KP_NUMBER_1  &none   &none   &kp KP_NUMBER_2  &kp KP_NUMBER_0  &none   &kp KP_NUMBER_4  &none            &kp LSHFT
-&kp LSHFT  &none            &none   &none   &none            &none            &none   &none            &kp KP_NUMBER_3  &kp KP_NUMBER_5  &none
-&none      &none            &none   &none   &kp KP_NUMBER_6  &none            &none   &none            &none            &none
+&none      &kp O            &none   &none   &kp GRAVE        &kp SEMI         &none   &kp PERIOD  &none            &kp LSHFT
+&kp LSHFT  &none            &none   &none   &none            &none            &none   &none            &kp APOSTROPHE  &kp RIGHT_BRACKET  &none
+&none      &none            &none   &none   &kp M            &none            &none   &none            &none            &none
            &trans           &trans  &trans  &trans           &trans           &trans  &trans           &trans           &trans           &trans  &trans
             >;
         };
