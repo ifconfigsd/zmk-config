@@ -582,25 +582,25 @@
             key-positions = <24 23>;
         };
 
-        Apple_SwitchToUA_combo {
+        Mac-Switch-To-UA-combo {
             /*
                 Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&Mac_SwitchToUA_Macro>;
+            bindings = <&Mac_Switch_To_UA_Macro>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        Apple_SwitchToEN_combo {
+        Mac-Switch-To-EN-combo {
             /*
                 Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
                 On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             */
 
-            bindings = <&Mac_SwitchToEN_Macro>;
+            bindings = <&Mac_Switch_To_EN_Macro>;
             key-positions = <27 28>;
             layers = <1>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
@@ -618,38 +618,40 @@
             layers = <1>;
         };
 
-        iPad_SwitchToEN {
+        iPad-Switch-To-EN-combo {
             // Read in Mac counterpat combo
 
-            bindings = <&iPadEN_Macro>;
-            key-positions = <27 28>;
+            bindings = <&iPad_EN_Macro>;
+            key-positions = <27 28 10>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <2>;
         };
 
-        iPad_SwitchToUK {
+        iPad-Switch-To-UA-combo {
             // Read in Mac counterpat combo
 
             bindings = <&iPad_UA_Macro>;
-            key-positions = <28 29>;
+            key-positions = <28 29 10>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <26>;
+            layers = <0>;
         };
 
-        iPadENSupresWhenAlready {
+        iPad-Suppress-EN-for-EN-combo {
             // read mac counterpart combos or search "supress"
 
             bindings = <&none>;
-            key-positions = <28 27>;
+            key-positions = <28 27 10>;
             timeout-ms = <190>;
+            layers = <0>;
         };
 
-        iPadUKSupressWhenAlready {
+        iPad-Suppress-UA-for-UA-combo {
             // read mac counterpart combos or search "supress"
 
             bindings = <&none>;
-            key-positions = <28 29>;
+            key-positions = <28 29 10>;
             timeout-ms = <190>;
+            layers = <2>;
         };
 
         Delete_Word_Mac {
@@ -1013,7 +1015,7 @@
                 <&kp F16>;
         };
 
-        Mac_SwitchToUA_Macro: MacKarabinerUK {
+        Mac_Switch_To_UA_Macro: MacKarabinerUK {
             /*
                 Macro is mandatory. As keyboard must switch zmk layout too (in addition to sending language changing key
                 sequence to karabener which is not possible wo macro)
@@ -1030,7 +1032,7 @@
             label = "MACKARABINERUK";
         };
 
-        Mac_SwitchToEN_Macro: MacKarabinerEN {
+        Mac_Switch_To_EN_Macro: MacKarabinerEN {
             // read ^16499de1
 
             compatible = "zmk,behavior-macro";
@@ -1046,19 +1048,18 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 5>;
+            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4>;
             label = "IPADUKMACRO";
         };
 
-        iPadEN_Macro: iPadEN_Macro {
+        iPad_EN_Macro: iPadEN_Macro {
             tap-ms = <0>;
             wait-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 5>;
+            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 3>;
             label = "IPADENMACRO";
         };
-
 
         UbuntuWindowsSwWA_Macro: www {
             compatible = "zmk,behavior-macro";
