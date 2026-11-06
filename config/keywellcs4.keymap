@@ -576,14 +576,14 @@
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
-            layers = <0 1>;
+            layers = <0 1 2 3>;
             timeout-ms = <150>;
         };
 
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 1 5 7 5 4 8 9 10 11 12>;
+            layers = <0 1 5 5 4 8 2 3>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
