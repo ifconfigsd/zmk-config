@@ -739,7 +739,7 @@
 
         PutWordInQuotes {
             bindings = <&PutWordInQuotes_Macro>;
-            key-positions = <19 18 2>;
+            key-positions = <19 18>;
             layers = <4 5>;
         };
 
