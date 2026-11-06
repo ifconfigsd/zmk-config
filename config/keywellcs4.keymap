@@ -992,7 +992,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 5 &tog_of 27 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 27 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -1001,7 +1001,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 0 &tog_of 1 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_on 2 &tog_of 3 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
@@ -1010,7 +1010,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_on 27 &tog_of 1 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 2 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 27 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "UBUNTUMACRO";
         };
 
