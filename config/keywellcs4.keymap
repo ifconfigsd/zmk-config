@@ -1283,7 +1283,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Apple-EN-QWERTY {
+        Mac-EN {
             /*
                 Keys physically like EN Colemak, but produce correct letters when system is in QWERTY (EN).
                 This allows to type on devices where Colemak is not supported.
@@ -1301,7 +1301,7 @@
             >;
         };
 
-        Mac-UA-QWERTY {
+        Mac-UA {
             /*
                 Keys physically like UA Colemak, but produce correct letters when system is QWERTY (UA).
                 This allows to type on devices where Colemak is not supported.
@@ -1319,7 +1319,7 @@
             >;
         };
 
-        iPad-EN-QWERTY {
+        iPad-EN {
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
@@ -1328,7 +1328,7 @@
             >;
         };
 
-        iPad-UA-QWERTY {
+        iPad-UA {
             bindings = <
 &kp Z                          &kp I                            &Layer_Tap_Timeless_Left 26 A      &P_Tabs_Timeless_left 0 G         &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 9 K  &Layer_Tap_Timeless_Right 26 E  &kp B                             &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &iPad_Globe_non_en_fix_LHRM 0 F  &iPad_Control_non_en_fix_LHRM 0 H  &iPad_Option_non_en_fix_LHRM 0 C  &iPad_CMD_non_en_fix_LHRM 0 N      &D_Tasks_Timeless_left 0 L  &kp X                          &iPad_CMD_non_en_fix_RHRM 0 Y   &iPad_Option_non_en_fix_RHRM 0 T  &iPad_Control_non_en_fix_RHRM 0 S  &iPad_Globe_non_en_fix_RHRM 0 J
