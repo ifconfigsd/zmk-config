@@ -1275,7 +1275,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &tog_of 1 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4 &tog_on 2>;
+            bindings = <&bt BT_SEL 3 &tog_of 1 &tog_of 27 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4 &tog_on 2 &tog_of 3>;
             label = "IPHONE_BT_MACRO";
         };
     };
