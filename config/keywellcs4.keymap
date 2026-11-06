@@ -669,7 +669,7 @@
             // read mac counterpart combos or search "supress"
 
             bindings = <&none>;
-            key-positions = <28 29 10>;
+            key-positions = <28 29>;
             timeout-ms = <190>;
             layers = <3>;
         };
