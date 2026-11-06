@@ -1497,10 +1497,10 @@
 
         Test-UA-Mac-non-fits {
             bindings = <
-&none      &kp O   &none   &none   &kp KP_NUMBER_2  &kp KP_NUMBER_0  &none   &kp KP_NUMBER_4  &none            &kp LSHFT
-&kp LSHFT  &none   &none   &none   &none            &none            &none   &none            &kp KP_NUMBER_3  &kp KP_NUMBER_5  &none
-&none      &none   &none   &none   &kp KP_NUMBER_1  &kp KP_NUMBER_7  &none   &none            &none            &none
-           &trans  &trans  &trans  &trans           &trans           &trans  &trans           &trans           &trans           &trans  &trans
+&none      &kp KP_NUMBER_8  &none   &none   &kp KP_NUMBER_2  &kp KP_NUMBER_0  &none   &kp KP_NUMBER_4  &none            &kp LSHFT
+&kp LSHFT  &none            &none   &none   &none            &none            &none   &none            &kp KP_NUMBER_3  &kp KP_NUMBER_5  &none
+&none      &none            &none   &none   &kp KP_NUMBER_1  &kp KP_NUMBER_7  &none   &none            &none            &none
+           &trans           &trans  &trans  &trans           &trans           &trans  &trans           &trans           &trans           &trans  &trans
             >;
         };
 
