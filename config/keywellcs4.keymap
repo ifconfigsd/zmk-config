@@ -642,7 +642,7 @@
             // Read in Mac counterpat combo
 
             bindings = <&iPad_EN_Macro>;
-            key-positions = <27 28 10>;
+            key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <3>;
         };
@@ -651,18 +651,18 @@
             // Read in Mac counterpat combo
 
             bindings = <&iPad_UA_Macro>;
-            key-positions = <28 29 10>;
+            key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <0>;
+            layers = <2>;
         };
 
         iPad-Suppress-EN-for-EN-combo {
             // read mac counterpart combos or search "supress"
 
             bindings = <&none>;
-            key-positions = <28 27 10>;
+            key-positions = <28 27>;
             timeout-ms = <190>;
-            layers = <0>;
+            layers = <2>;
         };
 
         iPad-Suppress-UA-for-UA-combo {
