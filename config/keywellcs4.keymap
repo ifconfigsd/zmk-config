@@ -583,12 +583,13 @@
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 1 5 5 4 8 2 3>;
+            layers = <0 1 8 2 3>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
             bindings = <&Sticky_1500ms LEFT_CONTROL>;
             key-positions = <24 23>;
+            layers = <27>;
         };
 
         Mac-Switch-To-UA-combo {
@@ -626,7 +627,7 @@
             layers = <0>;
         };
 
-        Mac-UK-Accent-Dead-Key {
+        Mac-UA-Accent-Dead-Key {
             /*
                 Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement
                 then this role elswere.
@@ -674,10 +675,10 @@
             layers = <3>;
         };
 
-        Delete_Word_Mac {
+        Delete_Word_Apple {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
-            layers = <0 1>;
+            layers = <0 1 2 3>;
             require-prior-idle-ms = <320>;
         };
 
@@ -685,6 +686,7 @@
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 18>;
             require-prior-idle-ms = <320>;
+            layers = <27>;
         };
 
         AppWindowsSwNext1 {
@@ -737,7 +739,7 @@
 
         PutWordInQuotes {
             bindings = <&PutWordInQuotes_Macro>;
-            key-positions = <19 18>;
+            key-positions = <19 18 2>;
             layers = <4 5>;
         };
 
