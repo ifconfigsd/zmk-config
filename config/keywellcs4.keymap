@@ -1628,7 +1628,7 @@
             bindings = <
 &none      &kp O   &none   &none   &kp GRAVE  &kp SEMI  &none   &kp PERIOD  &none           &kp LSHFT
 &kp LSHFT  &none   &none   &none   &none      &none     &none   &none       &kp APOSTROPHE  &kp RIGHT_BRACKET  &none
-&none      &none   &none   &none   &kp M      &none     &none   &none       &none           &none
+&none      &none   &none   &none   &none      &kp M     &none   &none       &none           &none
            &trans  &trans  &trans  &trans     &trans    &trans  &trans      &trans          &trans             &trans  &trans
             >;
         };
