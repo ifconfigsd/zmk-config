@@ -1282,10 +1282,10 @@
 
         Symbols_and_Emoji_Sys_Layouts {
             bindings = <
-&kp Q           &kp W         &kp F                &kp P            &kp G                &kp J   &kp L   &kp U                &kp Y            &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_COMMAND T  &kp D   &kp H   &hmr LEFT_COMMAND N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
-&kp Z           &kp X         &kp C                &kp V            &kp B                &kp K   &kp M   &kp COMMA            &kp DOT          &kp FSLH
-                &trans        &trans               &trans           &trans               &trans  &trans  &trans               &trans           &trans               &trans        &trans
+&kp Q           &kp W         &kp E                &kp R            &kp T                &kp Y   &kp U   &kp I                &kp O            &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G   &kp H   &hmr LEFT_COMMAND J  &hmr LEFT_ALT K  &hmr LEFT_CONTROL L  &hmr GLOBE SEMICOLON
+&kp Z           &kp X         &kp C                &kp V            &kp B                &kp N   &kp M   &kp COMMA            &kp DOT          &kp FSLH
+                &trans        &trans               &trans           &trans               &trans  &trans  &trans               &trans           &trans               &trans                &trans
             >;
         };
 
