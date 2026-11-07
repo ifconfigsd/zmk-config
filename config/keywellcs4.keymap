@@ -464,46 +464,6 @@
             hold-trigger-on-release;
         };
 
-        En_Ampersan_override_tied_Shift: En_Ampersan_override_tied_Shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EN_AMPERSAN_OVERRIDE_TIED_SHIFT";
-            bindings = <&kp AMPS>, <&kp N7>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
-            mods = <(MOD_LSFT | MOD_RSFT | MOD_LALT | MOD_RALT)>;
-        };
-
-        UA_Ampersan_override_tied_Shift: UA_Ampersan_override_tied_Shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UA_AMPERSAN_OVERRIDE_TIED_SHIFT";
-            bindings = <&kp LA(LC(LS(N7)))>, <&kp N7>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
-            mods = <(MOD_LSFT | MOD_RSFT | MOD_LALT | MOD_RALT)>;
-        };
-
-        EN_greaters_and_triangles: EN_greaters_and_triangles {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EN_GREATERS_AND_TRIANGLES";
-            bindings = <&kp GREATER_THAN>, <&kp KP_NUMBER_1>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
-            mods = <(MOD_LSFT | MOD_RSFT | MOD_LALT | MOD_RALT)>;
-        };
-
-        EN_UA_exclamation_and_warning: EN_UA_exclamation_and_warning {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EN_UA_EXCLAMATION_AND_WARNING";
-            bindings = <&kp EXCL>, <&kp NUMBER_1>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
-            mods = <(MOD_LSFT | MOD_RSFT | MOD_LALT | MOD_RALT)>;
-        };
-
         leaderKey_1: leaderKey_1 {
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
