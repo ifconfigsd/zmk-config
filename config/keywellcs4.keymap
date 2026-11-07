@@ -562,7 +562,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_IPAD_UA_NONFITS";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sl 29>;
+            bindings = <&kp LS(SLASH)>, <&sl 29>;
 
             tapping-term-ms = <350>;
         };
@@ -1325,7 +1325,7 @@
             bindings = <
 &kp Z                          &kp I                             &Layer_Tap_Timeless_Left 26 A    &P_Tabs_Timeless_left 0 G       &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 9 K  &Layer_Tap_Timeless_Right 26 E  &kp B                           &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &iPad_GLOBE_Phonetic_UA_LHRM 0 F  &iPad_CTRL_Phonetic_UA_LHRM 0 H  &iPad_OPT_Phonetic_UA_LHRM 0 C  &iPad_CMD_Phonetic_UA_LHRM 0 N     &D_Tasks_Timeless_left 0 L  &kp X                          &iPad_CMD_Phonetic_UA_RHRM 0 Y  &iPad_OPT_Phonetic_UA_RHRM 0 T  &iPad_CTRL_Phonetic_UA_RHRM 0 S  &iPad_GLOBE_Phonetic_UA_RHRM 0 J
-&Layer_Tap_Timeless_Left 12 P  &lt 21 LEFT_BRACKET               &lt 22 W                         &lt 20 D                        &Layer_Tap_Timeless_Left 11 COMMA  &kp R                       &kp V                          &Test_iPad_UA_Nonfits           &UA_Period_Symbol               &UA_Question_Symbol
+&Layer_Tap_Timeless_Left 12 P  &lt 21 LEFT_BRACKET               &lt 22 W                         &lt 20 D                        &Layer_Tap_Timeless_Left 11 COMMA  &kp R                       &kp V                          &Test_iPad_UA_Nonfits           &kp PERIOD                      &kp SLASH
                                &trans                            &trans                           &trans                          &trans                             &trans                      &trans                         &trans                          &trans                          &trans                           &trans                            &Thumb_HT_VeryShort 5 SPACE
             >;
         };
