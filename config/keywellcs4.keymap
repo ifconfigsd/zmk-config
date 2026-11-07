@@ -1304,10 +1304,10 @@
             */
 
             bindings = <
-&kp EXCL        &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &kp GREATER_THAN                     &En_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
-                &trans     &trans         &trans            &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans             &trans                               &trans                            &trans             &trans          &trans
+&kp EXCL        &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &kp GREATER_THAN                     &kp AMPERSAND    &trans
+&kp LEFT_SHIFT  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON  &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD       &kp QUESTION
+                &trans     &trans         &trans            &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans             &trans                               &trans           &trans             &trans          &trans
             >;
         };
 
