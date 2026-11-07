@@ -313,41 +313,6 @@
             keep-mods = <0>;       // don't send Shift with Delete
         };
 
-        UA_Period_Symbol: UA_Period_Symbol {
-            // Keep it consistent with EN first register only. Second  - ppo.
-
-            compatible = "zmk,behavior-mod-morph";
-            label = "UA_PERIOD_SYMBOL";
-            bindings = <&kp SLASH>, <&none>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL | MOD_LSFT | MOD_LALT | MOD_LGUI)>;
-            mods = <(MOD_RSFT | MOD_LSFT)>;
-        };
-
-        UA_Comma_Symbol: UA_Comma_Symbol {
-            //  Keep it consistent with EN first register only. Second  - ppo
-
-            compatible = "zmk,behavior-mod-morph";
-            label = "UA_COMMA_SYMBOL";
-            bindings = <&kp LS(SLASH)>, <&none>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL | MOD_LALT | MOD_LGUI | MOD_LSFT)>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        UA_Question_Symbol: UA_Question_Symbol {
-            //  Keep it consistent with EN 1st and 2nd registers
-
-            compatible = "zmk,behavior-mod-morph";
-            label = "UA_QUESTION_SYMBOL";
-            bindings = <&kp LC(LA(SLASH))>, <&kp LA(NUMBER_7)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
-        };
-
         kt_on: key_toggle_on_only {
             compatible = "zmk,behavior-key-toggle";
             #binding-cells = <1>;
@@ -1308,7 +1273,7 @@
 &kp Z                          &kp I                         &Layer_Tap_Timeless_Left 26 A  &P_Tabs_Timeless_left 0 G   &kp U                                    &kp Q                       &Layer_Tap_Timeless_Right 9 K  &Layer_Tap_Timeless_Right 26 E  &kp B                       &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &Mac_GLOBE_nonEN_WA_LHRM 0 F  &Mac_CTRL_nonEN_WA_LHRM 0 H    &Mac_OPT_nonEN_WA_LHRM 0 C  &Mac_CMD_nonEN_WA_LHRM 0 N               &D_Tasks_Timeless_left 0 L  &kp X                          &Mac_CMD_nonEN_WA_RHRM 0 Y      &Mac_OPT_nonEN_WA_RHRM 0 T  &Mac_CTRL_nonEN_WA_RHRM 0 S  &Mac_GLOBE_nonEN_WA_RHRM 0 J
 &Layer_Tap_Timeless_Left 12 P  &lt 21 KP_NUMBER_6            &lt 22 W                       &lt 20 D                    &Layer_Tap_Timeless_Left 11 KP_NUMBER_1  &kp R                       &kp V                          &Test_Mac_UA_Nonfits            &kp PERIOD                  &kp SLASH
-                               &trans                        &trans                         &trans                      &trans                                   &trans                      &trans                         &trans                          &trans                      &trans                       &trans                        &Thumb_HT_VeryShort 5 SPACE
+                               &trans                        &trans                         &trans                      &trans                                   &trans                      &trans                         &trans                          &trans                      &trans                       &trans                        &Thumb_HT_VeryShort 4 SPACE
             >;
         };
 
@@ -1330,7 +1295,7 @@
             >;
         };
 
-        Apple-EN-QWERTY-Symbols {
+        Mac-EN-UA-Symbols {
             /*
                 &hml LEFT_COMMAND LEFT_PARENTHESIS
                     is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
@@ -1339,19 +1304,19 @@
             */
 
             bindings = <
-&EN_UA_exclamation_and_warning  &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &EN_greaters_and_triangles           &En_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH                   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
-                                &trans     &trans         &trans            &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans             &trans                               &trans                            &trans             &trans          &trans
+&kp EXCL        &kp UNDER  &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH                 &kp RIGHT_BRACKET  &kp GREATER_THAN                     &En_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT  &kp EQUAL  &kp MINUS      &hml LALT PLUS    &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET                &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr LALT COLON                   &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH   &kp TILDE  &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT                   &kp RIGHT_BRACE    &kp SEMI                             &kp PERIOD                        &kp QUESTION
+                &trans     &trans         &trans            &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans             &trans                               &trans                            &trans             &trans          &trans
             >;
         };
 
-        Apple-UA-QWERTY-Symbols {
+        iPad-UA-Symbols {
             bindings = <
-&EN_UA_exclamation_and_warning  &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &EN_UA_exclamation_and_warning       &UA_Ampersan_override_tied_Shift  &trans
-&kp LEFT_SHIFT                  &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)               &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LEFT_ALT) LA(LC(COLON))     &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
-&kp LA(LC(BACKSLASH))           &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)               &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
-                                &trans     &trans                 &trans                        &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
+&kp EXCL               &kp UNDER  &kp LC(LA(LS(COMMA)))  &kp LC(LA(LEFT_BRACKET))      &kp LC(LA(GRAVE))                   &kp LA(N3)               &kp LC(LA(RIGHT_BRACKET))      &kp EXCL                             &UA_Ampersan_override_tied_Shift  &trans
+&kp LEFT_SHIFT         &kp EQUAL  &kp MINUS              &hml LALT PLUS                &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp LA(N6)               &kp LA(N4)                     &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &hmr (LEFT_ALT) LA(LC(COLON))     &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
+&kp LA(LC(BACKSLASH))  &kp LA(M)  &kp LA(N8)             &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)                          &kp LA(N2)               &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(SEMI))                     &kp LA(LC(PERIOD))                &kp LA(LS(LC(SLASH)))
+                       &trans     &trans                 &trans                        &Symbols_System_Layouts_m           &Emoji_System_Layouts_m  &trans                         &trans                               &trans                            &trans                        &trans                  &trans
             >;
         };
 
