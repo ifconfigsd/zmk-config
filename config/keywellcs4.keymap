@@ -1307,7 +1307,7 @@
             bindings = <
 &kp Z                          &kp I                         &Layer_Tap_Timeless_Left 26 A  &P_Tabs_Timeless_left 0 G   &kp U                                    &kp Q                       &Layer_Tap_Timeless_Right 9 K  &Layer_Tap_Timeless_Right 26 E  &kp B                       &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &Mac_GLOBE_nonEN_WA_LHRM 0 F  &Mac_CTRL_nonEN_WA_LHRM 0 H    &Mac_OPT_nonEN_WA_LHRM 0 C  &Mac_CMD_nonEN_WA_LHRM 0 N               &D_Tasks_Timeless_left 0 L  &kp X                          &Mac_CMD_nonEN_WA_RHRM 0 Y      &Mac_OPT_nonEN_WA_RHRM 0 T  &Mac_CTRL_nonEN_WA_RHRM 0 S  &Mac_GLOBE_nonEN_WA_RHRM 0 J
-&Layer_Tap_Timeless_Left 12 P  &lt 21 NUMBER_6               &lt 22 W                       &lt 20 D                    &Layer_Tap_Timeless_Left 11 KP_NUMBER_1  &kp R                       &kp V                          &Test_Mac_UA_Nonfits            &kp PERIOD                  &kp SLASH
+&Layer_Tap_Timeless_Left 12 P  &lt 21 KP_NUMBER_6            &lt 22 W                       &lt 20 D                    &Layer_Tap_Timeless_Left 11 KP_NUMBER_1  &kp R                       &kp V                          &Test_Mac_UA_Nonfits            &kp PERIOD                  &kp SLASH
                                &trans                        &trans                         &trans                      &trans                                   &trans                      &trans                         &trans                          &trans                      &trans                       &trans                        &Thumb_HT_VeryShort 5 SPACE
             >;
         };
