@@ -614,9 +614,16 @@
             layers = <27>;
         };
 
-        AppWindowsSwNext1 {
+        AppWindowsSwNextP1 {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <21 14>;
+            timeout-ms = <150>;
+            layers = <0 1>;
+        };
+
+        AppWindowsSwNextP2 {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <21 13>;
             timeout-ms = <150>;
             layers = <0 1>;
         };
@@ -631,13 +638,6 @@
         AppWindowsSwPrevP2 {
             bindings = <&kp LG(LS(GRAVE))>;
             key-positions = <21 12>;
-            timeout-ms = <150>;
-            layers = <0 1>;
-        };
-
-        AppWindowsSwNextP2 {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <21 13>;
             timeout-ms = <150>;
             layers = <0 1>;
         };
