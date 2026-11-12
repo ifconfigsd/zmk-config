@@ -491,6 +491,16 @@
 
             tapping-term-ms = <350>;
         };
+
+        Test_Symbols_HT: Test_Symbols_HT {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TEST_SYMBOLS_HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 14 15 21 22 23 25 24 5 6 7 8 9 30 19 20 29 28 18 17 16 26 27 13>;
+        };
     };
 
     combos {
@@ -1213,7 +1223,7 @@
 
             bindings = <
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
+&kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &Test_Symbols_HT LCMD N         &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 12 Z  &lt 21 X      &lt 22 C                       &lt 20 V                       &Layer_Tap_Timeless_Left 11 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
                                &tog_on 7     &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 4 SPACE
             >;
