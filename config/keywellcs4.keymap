@@ -492,9 +492,9 @@
             tapping-term-ms = <350>;
         };
 
-        Test_Symbols_HT: Test_Symbols_HT {
+        ht_sys_sub_layouts: ht_sys_sub_layouts {
             compatible = "zmk,behavior-hold-tap";
-            label = "TEST_SYMBOLS_HT";
+            label = "HT_SYS_SUB_LAYOUTS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -1293,10 +1293,10 @@
 
         Symbols_and_Emoji_Sys_Layouts {
             bindings = <
-&kp Q           &kp W         &kp E                &kp R            &kp T                &kp Y   &kp U   &kp I                            &kp O            &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G   &kp H   &Test_Symbols_HT LEFT_COMMAND J  &hmr LEFT_ALT K  &hmr LEFT_CONTROL L  &hmr GLOBE SEMICOLON
-&kp Z           &kp X         &kp C                &kp V            &kp B                &kp N   &kp M   &kp COMMA                        &kp DOT          &kp FSLH
-                &trans        &trans               &trans           &trans               &trans  &trans  &trans                           &trans           &trans               &trans                &trans
+&kp Q           &kp W                        &kp E                               &kp R                           &kp T                               &kp Y   &kp U   &kp I                               &kp O                           &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &ht_sys_sub_layouts GLOBE A  &ht_sys_sub_layouts LEFT_CONTROL S  &ht_sys_sub_layouts LEFT_ALT D  &ht_sys_sub_layouts LEFT_COMMAND F  &kp G   &kp H   &ht_sys_sub_layouts LEFT_COMMAND J  &ht_sys_sub_layouts LEFT_ALT K  &ht_sys_sub_layouts LEFT_CONTROL L  &ht_sys_sub_layouts GLOBE SEMICOLON
+&kp Z           &kp X                        &kp C                               &kp V                           &kp B                               &kp N   &kp M   &kp COMMA                           &kp DOT                         &kp FSLH
+                &trans                       &trans                              &trans                          &trans                              &trans  &trans  &trans                              &trans                          &trans                              &trans                               &trans
             >;
         };
 
