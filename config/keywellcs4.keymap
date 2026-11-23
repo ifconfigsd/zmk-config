@@ -569,7 +569,7 @@
                 then this role elswere.
             */
 
-            bindings = <&kp KP_NUMBER_8>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <1>;
