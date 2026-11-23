@@ -569,7 +569,7 @@
                 then this role elswere.
             */
 
-            bindings = <&kp LA(RIGHT_BRACKET)>;
+            bindings = <&kp LA(APOSTROPHE)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <1>;
