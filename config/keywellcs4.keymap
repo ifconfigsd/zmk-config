@@ -1553,10 +1553,10 @@
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog 0    &tog 1      &tog 0      &iPhone_BT_m  &tog 5        &none         &trans     &Ubuntu_BT_m  &none    &tog 26
-&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT    &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans   &iPad_BT_m  &none
-&trans    &trans      &none       &kp INSERT    &out OUT_BLE  &none         &Mac_BT_m  &trans        &none    &none
-          &sys_reset  &none       &none         &none         &none         &none      &sys_reset    &kt F15  &bt BT_CLR  &none  &none
+&tog 0    &tog 1      &tog 0      &none       &tog 5        &none         &trans     &none         &none         &tog 26
+&kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &Ubuntu_BT_m  &trans        &none       &none
+&trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_m  &iPad_BT_m    &iPhone_BT_m  &none
+          &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &kt F15       &bt BT_CLR  &none  &none
             >;
         };
 
