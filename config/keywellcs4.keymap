@@ -487,7 +487,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TEST_IPAD_UA_NONFITS";
             #binding-cells = <0>;
-            bindings = <&kp LS(SLASH)>, <&sl 29>;
+            bindings = <&kp LS(SLASH)>, <&sl 28>;
 
             tapping-term-ms = <350>;
         };
@@ -1226,7 +1226,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 12 Z  &lt 21 X      &lt 22 C                       &lt 20 V                       &Layer_Tap_Timeless_Left 11 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 7     &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 4 SPACE
+                               &tog_on 7     &mo 29                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 4 SPACE
             >;
         };
 
@@ -1253,7 +1253,7 @@
 &kp Q                          &kp W         &Layer_Tap_Timeless_Left 26 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 9 L  &Layer_Tap_Timeless_Right 26 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml GLOBE A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                          &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &Layer_Tap_Timeless_Left 12 Z  &lt 21 X      &lt 22 C                       &lt 20 V                       &Layer_Tap_Timeless_Left 11 B  &kp K                       &kp M                          &kp COMMA                       &kp DOT      &kp FSLH
-                               &tog_on 7     &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 4 SPACE
+                               &tog_on 7     &mo 29                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 8 TAB      &Thumb_HT_Normal 7 ESCAPE   &none                          &none                           &none        &Backspase_MacLike_mod_morph  &kp ENTER     &Thumb_HT_VeryShort 4 SPACE
             >;
         };
 
@@ -1550,6 +1550,15 @@
             >;
         };
 
+        Test_iPad_non_fits {
+            bindings = <
+&none      &kp O   &none   &none   &kp GRAVE  &kp SEMI  &none   &kp PERIOD  &none           &kp LSHFT
+&kp LSHFT  &none   &none   &none   &none      &none     &none   &none       &kp APOSTROPHE  &kp RIGHT_BRACKET  &none
+&none      &none   &none   &none   &none      &kp M     &none   &none       &none           &none
+           &trans  &trans  &trans  &trans     &trans    &trans  &trans      &trans          &trans             &trans  &trans
+            >;
+        };
+
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
@@ -1557,15 +1566,6 @@
 &kp CAPS  &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &Ubuntu_BT_m  &trans        &none       &none
 &trans    &trans      &none       &kp INSERT  &out OUT_BLE  &none         &Mac_BT_m  &iPad_BT_m    &iPhone_BT_m  &none
           &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &kt F15       &bt BT_CLR  &none  &none
-            >;
-        };
-
-        Test_iPad_non_fits {
-            bindings = <
-&none      &kp O   &none   &none   &kp GRAVE  &kp SEMI  &none   &kp PERIOD  &none           &kp LSHFT
-&kp LSHFT  &none   &none   &none   &none      &none     &none   &none       &kp APOSTROPHE  &kp RIGHT_BRACKET  &none
-&none      &none   &none   &none   &none      &kp M     &none   &none       &none           &none
-           &trans  &trans  &trans  &trans     &trans    &trans  &trans      &trans          &trans             &trans  &trans
             >;
         };
     };
